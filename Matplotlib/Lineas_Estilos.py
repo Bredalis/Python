@@ -8,12 +8,10 @@ Grafica_Y = np.sin(Grafica_X)
 def Estilo_Puntos():
 
 	plt.plot(Grafica_X, Grafica_Y, linewidth = 3, linestyle = '-')
-	plt.show()
 
 def Estilo_Stem():
 
 	plt.stem(Grafica_X, Grafica_Y, linefmt = ('g', ':'), markerfmt = 'D', basefmt = 'C3--')
-	plt.show()
 
 def Estilo_Set():
 
@@ -28,4 +26,5 @@ def Estilo_Set():
 	Grafico.spines['left'].set_visible(True)
 
 	Grafico.grid(True, linewidth = 2)
-	plt.show()
+
+plt.show()
