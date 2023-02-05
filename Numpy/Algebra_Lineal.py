@@ -5,14 +5,6 @@ Matriz_2D = np.array([[-1, -2, -3], [1, 2, 3]])
 
 Matriz_1D = np.array([1, 1, 0])
 
-def Combercion():
-
-	# De Columna a Fila
-
-	Matriz_1_Columna = np.array([[1], [2], [3]])
-
-	return np.transpose(Matriz_1_Columna)
-
 def Combercion_Vertical():
 
 	Matriz = np.array([[-3], [5], [-2]])

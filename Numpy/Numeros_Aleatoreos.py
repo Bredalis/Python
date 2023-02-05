@@ -14,5 +14,3 @@ def Numeros_Aleatoreos():
 	Matriz_4 = np.random.choice([2, 4, 8, 10], p = [0.3, 0.1, 0.1, 0.5], size = (50))
 
 	print(Matriz_1, Matriz_2, Matriz_3, Matriz_Decimal, Matriz_4)
-
-print(Numeros_Aleatoreos())
