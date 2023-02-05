@@ -17,6 +17,6 @@ def Raiz_Cuadrada(numero):
 
 	"""
 
-	return [math.sqrt(elemento)for elemento in numero]
+	return [math.sqrt(elemento) for elemento in numero]
 
 print(Raiz_Cuadrada([4, 9, 16]))
