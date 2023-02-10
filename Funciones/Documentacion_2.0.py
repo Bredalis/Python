@@ -1,9 +1,10 @@
+
 import math
 import doctest
 
 doctest.testmod()
 
-def Raiz_Cuadrada(numero):
+def Raiz_Cuadrada(Numero):
 
 	"""
 
@@ -17,6 +18,6 @@ def Raiz_Cuadrada(numero):
 
 	"""
 
-	return [math.sqrt(elemento) for elemento in numero]
+	return [math.sqrt(Elemento) for Elemento in Numero]
 
 print(Raiz_Cuadrada([4, 9, 16]))

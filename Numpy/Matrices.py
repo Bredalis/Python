@@ -14,7 +14,3 @@ def Elaboracion_Matriz():
 	Matriz_Par = np.array([2, 4, 6])
 	
 	return Matriz_Par + np.array(8)
-
-print(Elaboracion_Lista())
-
-print(Elaboracion_Matriz())

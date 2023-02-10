@@ -1,3 +1,4 @@
+
 import re
 
 class Regulares:
@@ -5,12 +6,12 @@ class Regulares:
 	def __init__(self):
 
 		self.Cadena = "Vamos a aprender expresiones regulares , Python , Python Python"
-		self.Texto_A_Buscar = "aprender"
-		self.Texto_Encontrado = re.search(self.Texto_A_Buscar, self.Cadena)
+		self.Texto_Buscar = "aprender"
+		self.Texto_Encontrado = re.search(self.Texto_Buscar, self.Cadena)
 
 	def Buscar(self):
 
-		if re.search(self.Texto_A_Buscar, self.Cadena) is not None:
+		if re.search(self.Texto_Buscar, self.Cadena) is not None:
 
 			print("He encontrado el texto")
 
@@ -26,7 +27,7 @@ class Regulares:
 		print(self.Texto_Encontrado.end())
 		print(self.Texto_Encontrado.span())
 
-		print(len(re.findall(self.Texto_A_Buscar, self.Cadena)))
+		print(len(re.findall(self.Texto_Buscar, self.Cadena)))
 
 Objeto_Clase = Regulares()
 Objeto_Clase.Buscar()

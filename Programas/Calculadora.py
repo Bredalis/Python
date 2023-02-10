@@ -4,7 +4,7 @@ import math
 import random
 
 Ventana = tk.Tk()
-Ventana.geometry("152x149")
+Ventana.geometry("352x149")
 Ventana.resizable(0,0)
 Ventana.title("CALCULATOR")
 

@@ -21,6 +21,7 @@ def Ticks():
 	Eje_Y = np.cos(Eje_X)
 
 	fig, Grafico = plt.subplots()
+
 	Grafico.plot(Eje_X, Eje_Y)
 	Grafico.set_xticks(np.arange(0, 20, 4), ["Python", "JS", "CSS", "HTML", "Git"])
 
@@ -39,6 +40,7 @@ def Data_Frame():
 	Grafico.set_yticks(range(0, 11, 1), minor = True)
 
 	Grafico.set(ylim = (0, 10))
+	
 	Grafico.yaxis.set_major_locator(MultipleLocator(1))
 	Grafico.yaxis.set_minor_locator(MultipleLocator(0.5))
 	Grafico.yaxis.set_minor_formatter("{x:.1f} puntos")

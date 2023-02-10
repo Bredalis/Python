@@ -10,7 +10,6 @@ Plan = pd.Series([
 	"Se Autodidacta", "Ten Fundamentos", "Une Puntos", 
 	"Reta la mente", "Práctica", "Aplica", 
 	"Experimenta", "Ten Mentores"
-
 ])
 
 print(Plan)

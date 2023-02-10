@@ -28,22 +28,22 @@ def Choose_Trip():
 
 	Label_Option.config(text = Option)
 
-Second_Window = tk.Frame(root).pack()
-Title = tk.Label(Second_Window, text = "Elige destinos", width = 20, bg = "pink").pack()
+My_Frame = tk.Frame(root).pack()
+Title = tk.Label(My_Frame, text = "Elige destinos", width = 20, bg = "pink").pack()
 
-Option_Beach = tk.Checkbutton(Second_Window, text = "Playa" , variable = Beach, onvalue = 1, offvalue = 0, 
-
-	command = lambda: Choose_Trip(), bg = "pink").pack()
-
-Option_Mountain = tk.Checkbutton(Second_Window, text = "Motaña", variable = Mountain , onvalue = 1, offvalue = 0, 
+Option_Beach = tk.Checkbutton(My_Frame, text = "Playa" , variable = Beach, onvalue = 1, offvalue = 0, 
 
 	command = lambda: Choose_Trip(), bg = "pink").pack()
 
-Option_Private = tk.Checkbutton(Second_Window, text = "Turismo Rural", variable = Private, onvalue = 1, offvalue = 0, 
+Option_Mountain = tk.Checkbutton(My_Frame, text = "Motaña", variable = Mountain , onvalue = 1, offvalue = 0, 
 
 	command = lambda: Choose_Trip(), bg = "pink").pack()
 
-Label_Option = tk.Label(Second_Window, bg = "pink")
+Option_Private = tk.Checkbutton(My_Frame, text = "Turismo Rural", variable = Private, onvalue = 1, offvalue = 0, 
+
+	command = lambda: Choose_Trip(), bg = "pink").pack()
+
+Label_Option = tk.Label(My_Frame, bg = "pink")
 Label_Option.pack()
 
 root.mainloop()

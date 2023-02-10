@@ -10,7 +10,6 @@ Datos = {
 
  	"Inteligencia Finaciera": ["Publicidad", "Probabilidad", "Inversiones", "Mercadotegnia", 
  	"Leyes de liderasgo", "Marketing Digital", "Estadistica", "El inversion Inteligente"],
-
 }
 
 Tabla_Libros = pd.DataFrame(Datos)

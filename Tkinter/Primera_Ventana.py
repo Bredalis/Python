@@ -1,15 +1,15 @@
 
 import tkinter as tk
 
-class Ventana:
+class Window:
 
 	def __init__(self):
 
-		self.Segunda_Ventana = tk.Frame(root, bg = "#FF66CC", width = "100", height = "100", bd = 35, relief = "groove", 
+		self.My_Frame = tk.Frame(root, bg = "#FF66CC", width = "100", height = "100", bd = 35, relief = "groove", 
 
 			cursor = "pirate").pack()
 
-		self.Mensaje = tk.Label(self.Segunda_Ventana, text = "Mi Primera Ventana", bg = "#76FF03", font = (25)).pack()
+		self.Mensaje = tk.Label(self.My_Frame, text = "Mi Primera Ventana", bg = "#76FF03", font = (25)).pack()
 
 if __name__ == "__main__":
 
@@ -21,5 +21,5 @@ if __name__ == "__main__":
 	root.resizable(0,0)
 	root.attributes('-alpha', 0.6)
 
-	Objeto_Clase = Ventana()
+	Class_Object = Window()
 	root.mainloop()

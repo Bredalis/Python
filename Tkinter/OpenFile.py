@@ -9,9 +9,9 @@ root.resizable(0,0)
 
 def Open_File():
 
-	Fichero = filedialog.askopenfilename(title = "Open", initialdir = "C:", filetypes = (("New folder", "*.py"), ("tkinter", "*.py")))
+	File = filedialog.askopenfilename(title = "Open", initialdir = "C:", filetypes = (("New folder", "*.py"), ("tkinter", "*.py")))
 	
-	print(Fichero)
+	print(File)
 
 tk.Button(root, text = "Open File", command = lambda: Open_File(), bg = "#EEFF41").pack()
 
