@@ -11,7 +11,7 @@ def Combercion_Vertical():
 
 	return np.transpose(Matriz)
 
-def Formula_Sistema_De_Ecuaciones():
+def Sistema_De_Ecuaciones():
 
 	Matriz_1 = np.array([[2, 1, -2], [3, 0, 1], [1, 1, -1]])
 

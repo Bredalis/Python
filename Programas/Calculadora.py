@@ -4,9 +4,19 @@ import math
 import random
 
 Ventana = tk.Tk()
-Ventana.geometry("352x149")
+Ventana.geometry("152x149")
 Ventana.resizable(0,0)
 Ventana.title("CALCULATOR")
+
+PI = math.pi 
+Nombre = tk.IntVar()
+Numero = ""
+Numero_2 = ""
+Operacion = ""
+
+Mi_Entry = tk.Entry(Ventana, textvariable = Nombre)
+Mi_Entry.grid(column = 0, row = 0, columnspan = 5 )
+Mi_Entry.config(justify = "right")
 
 def Mensaje():
 	Nombre.set("Calculadora")
@@ -98,15 +108,6 @@ def Igual():
 	if Operacion == "^" :
 		Mi_Entry.insert(0, Numero ** Numero_2)
 
-PI = math.pi 
-Nombre = tk.IntVar()
-Numero = ""
-Numero_2 = ""
-Operacion = ""
-
-Mi_Entry = tk.Entry(Ventana, textvariable = Nombre)
-Mi_Entry.grid(column = 0, row = 0, columnspan = 5 )
-Mi_Entry.config(justify = "right")
 
 Numero_1 = tk.Button(Ventana, text = "1", bg = "#E0E0E0", cursor = "pirate", width = 4, activebackground = '#AB47BC', command = lambda: Reclick(1)).grid(column = 1, row = 1)
 Numero_2 = tk.Button(Ventana, text = "2", bg = "#E0E0E0", cursor = "pirate", width = 4, activebackground = '#AB47BC', command = lambda: Reclick(2)).grid(column = 2, row = 1)

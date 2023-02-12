@@ -69,15 +69,17 @@ class Registro:
 
 			self.Resultado = self.Boton.config(text = "Guardado")
 
-			self.Valor_Registrado = open("Registro_De_Interfas.txt", "a")
-			self.Valor_Registrado.write(self.Valor_Nombre.get())
-			self.Valor_Registrado.write("\n")
-			self.Valor_Registrado.write(self.Valor_Apellido.get())
-			self.Valor_Registrado.write("\n")
-			self.Valor_Registrado.write(self.Valor_Contraseña.get())
-			self.Valor_Registrado.write("\n")
-			self.Valor_Registrado.write(self.Valor_Direccion.get())
-			self.Valor_Registrado.close()
+			self.Registro_Valor = open("Registro_De_Interfas.txt", "a")
+
+			self.Registro_Valor.write(self.Valor_Nombre.get())
+			self.Registro_Valor.write("\n")
+			self.Registro_Valor.write(self.Valor_Apellido.get())
+			self.Registro_Valor.write("\n")
+			self.Registro_Valor.write(self.Valor_Contraseña.get())
+			self.Registro_Valor.write("\n")
+			self.Registro_Valor.write(self.Valor_Direccion.get())
+			
+			self.Registro_Valor.close()
 
 if __name__ == "__main__":
 

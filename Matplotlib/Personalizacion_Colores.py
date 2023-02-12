@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 Eje_X = [1, 2, 3, 4, 5, 6, 7, 8]
 Eje_Y = [3, 1, 1, 2, 5, 5, 7, 6]
-Eje_Y2 = [2, 5, 5, 8, 9, 2, 0, 1]
+Eje_Y_2 = [2, 5, 5, 8, 9, 2, 0, 1]
 
 def Puntos():
 
@@ -16,7 +16,7 @@ def Lineas():
 	fig, Grafico = plt.subplots()
 
 	Grafico.plot(Eje_X, Eje_Y, color = 'r', linewidth = 5, zorder = 1) 
-	Grafico.plot(Eje_X, Eje_Y2, color = 'k', linewidth = 5, zorder = 2)
+	Grafico.plot(Eje_X, Eje_Y_2, color = 'k', linewidth = 5, zorder = 2)
 
 def Diagrama_De_Barras():
 

@@ -16,13 +16,13 @@ Imagen = Grafico.imshow(
 
 def Diagrama_De_Puntos():
 
-	Distancia = np.linspace(0, 2, 20)
+	Matriz_Distancia = np.linspace(0, 2, 20)
 
-	Grado = np.pi*Distancia
+	Grado = np.pi*Matriz_Distancia
 	Colores = Grado
 
 	fig, Grafico = plt.subplots(subplot_kw = dict(projection = "polar"))
-	Visualizacion = Grafico.scatter(Grado, Distancia, c = Colores, s = 100, cmap = "hsv")
+	Visualizacion = Grafico.scatter(Grado, Matriz_Distancia, c = Colores, s = 100, cmap = "hsv")
 
 	plt.colorbar(mappable = Visualizacion, location = "left")
 

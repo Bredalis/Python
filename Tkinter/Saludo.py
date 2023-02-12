@@ -10,6 +10,6 @@ My_Frame.pack()
 
 Imagen = tk.PhotoImage()
 
-tk.Label(My_Frame, text = "Hola Mundo, de la programacion", fg = "blue", font = (18), bg = "pink").pack()
+tk.Label(My_Frame, text = "Hola Mundo de la programacion", fg = "blue", font = (18), bg = "pink").pack()
 
 root.mainloop()

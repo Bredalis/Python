@@ -3,13 +3,13 @@ import pandas as pd
 
 Datos = {
 
-	"Desarrollo Personal": ["Ajedrez", "Piense y hagase rico", "Las 48 leyes del poder",
-	"Como ganar amigos e influir sobre las personas", "Filosofia", "Psicologia", "Habla menos actua mas", "Mente de crecimiento"],
+	"Desarrollo Personal": ["Ajedrez", "Piense y Hagase Rico", "Las 48 Leyes del Poder",
+	"Como Ganar Amigos e Influir Sobre las Personas", "Filosofia", "Psicologia", "Habla Menos, Actua Mas", "Mente en Crecimiento"],
 
- 	"Programacion": ["SQL","Libro negro del programador", "Keras", "Pytorch", "Patrones de diseño", "Python", "Linux", "Mejor Programador"],
+ 	"Programacion": ["SQL","Libro Negro del Programador", "Keras", "Pytorch", "Patrones de Diseño", "Python", "Linux", "Mejor Programador"],
 
  	"Inteligencia Finaciera": ["Publicidad", "Probabilidad", "Inversiones", "Mercadotegnia", 
- 	"Leyes de liderasgo", "Marketing Digital", "Estadistica", "El inversion Inteligente"],
+ 	"Leyes de Liderasgo", "Marketing Digital", "Estadistica", "El Inversor Inteligente"],
 }
 
 Tabla_Libros = pd.DataFrame(Datos)

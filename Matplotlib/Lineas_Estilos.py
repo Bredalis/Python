@@ -2,22 +2,22 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-Grafica_X = np.linspace(0.1, 6)
-Grafica_Y = np.sin(Grafica_X)
+Eje_X = np.linspace(0.1, 6)
+Eje_Y = np.sin(Eje_X)
 
 def Estilo_Puntos():
 
-	plt.plot(Grafica_X, Grafica_Y, linewidth = 3, linestyle = '-')
+	plt.plot(Eje_X, Eje_Y, linewidth = 3, linestyle = '-')
 
 def Estilo_Stem():
 
-	plt.stem(Grafica_X, Grafica_Y, linefmt = ('g', ':'), markerfmt = 'D', basefmt = 'C3--')
+	plt.stem(Eje_X, Eje_Y, linefmt = ('g', ':'), markerfmt = 'D', basefmt = 'C3--')
 
 def Estilo_Set():
 
 	fig, Grafico = plt.subplots()
 
-	Grafico.stem(Grafica_X, Grafica_Y, linefmt = ('p', ':'), markerfmt = 'D', basefmt = 'C3--')
+	Grafico.stem(Eje_X, Eje_Y, linefmt = ('p', ':'), markerfmt = 'D', basefmt = 'C3--')
 
 	Grafico.spines['left'].set_color('blue')
 	Grafico.spines['left'].set_linewidth(3)

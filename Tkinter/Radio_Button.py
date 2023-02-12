@@ -2,7 +2,7 @@
 import tkinter as tk
 
 Ventana = tk.Tk()
-Ventana.resizable(False,False)
+Ventana.resizable(0,0)
 
 Opcion = tk.IntVar()
 

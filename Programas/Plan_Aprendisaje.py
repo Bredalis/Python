@@ -8,7 +8,7 @@ Plan = pd.Series([
 	"Plan",
 
 	"Se Autodidacta", "Ten Fundamentos", "Une Puntos", 
-	"Reta la mente", "Práctica", "Aplica", 
+	"Reta la Mente", "Práctica", "Aplica", 
 	"Experimenta", "Ten Mentores"
 ])
 
