@@ -4,7 +4,7 @@ speed(13)
 
 # Control
 
-bgcolor("#990000")
+bgcolor('#990000')
 
 pensize(10)
 

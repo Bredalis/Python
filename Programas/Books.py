@@ -12,6 +12,10 @@ Datos = {
  	"Leyes de Liderasgo", "Marketing Digital", "Estadistica", "El Inversor Inteligente"],
 }
 
+pd.options.display.max_columns = None
+
 Tabla_Libros = pd.DataFrame(Datos)
+
+print("Libros")
 
 print(Tabla_Libros)

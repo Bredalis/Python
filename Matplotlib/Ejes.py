@@ -12,7 +12,7 @@ def Limits_Scales():
 	fig, Grafico = plt.subplots()
 
 	Grafico.plot(Eje_X, Eje_Y)
-	Grafico.set_yscale("log")
+	Grafico.set_yscale('log')
 	Grafico.set_ylim(0, 100000)
 
 def Ticks():
@@ -34,7 +34,7 @@ def Data_Frame():
 	fig, Grafico = plt.subplots(figsize = (10, 5))
 
 	Grafico.bar(DF_Datos.Campo, DF_Datos.Nivel)
-	Grafico.grid(axis = "y")
+	Grafico.grid(axis = 'y')
 
 	Grafico.set_yticks(range(0, 11, 2))
 	Grafico.set_yticks(range(0, 11, 1), minor = True)
@@ -43,11 +43,11 @@ def Data_Frame():
 	
 	Grafico.yaxis.set_major_locator(MultipleLocator(1))
 	Grafico.yaxis.set_minor_locator(MultipleLocator(0.5))
-	Grafico.yaxis.set_minor_formatter("{x:.1f} puntos")
+	Grafico.yaxis.set_minor_formatter('{x:.1f} puntos')
 
-	Grafico.tick_params(axis = "y", which = "major", labelsize = 14)
-	Grafico.tick_params(axis = "y", which = "minor", labelsize = 12)
+	Grafico.tick_params(axis = 'y', which = 'major', labelsize = 14)
+	Grafico.tick_params(axis = 'y', which = 'minor', labelsize = 12)
 
-	Grafico.tick_params(axis = "x", which = "major", labelsize = 14, labelrotation = 15)
+	Grafico.tick_params(axis = 'x', which = 'major', labelsize = 14, labelrotation = 15)
 
 plt.show()

@@ -25,6 +25,6 @@ def Diagrama_De_Barras():
 
 	fig, Grafico = plt.subplots()
 	
-	Grafico.bar(Eje_X, Eje_Y, color = "pink")
+	Grafico.bar(Eje_X, Eje_Y, color = 'pink')
 
 plt.show()

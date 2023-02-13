@@ -6,9 +6,9 @@ class Juegos():
 
     def __init__(self):
         
-        self.Cursor = "hand2"
-        self.Lados = "center"
-        self.Color = "pink"
+        self.Cursor = 'hand2'
+        self.Lados = 'center'
+        self.Color = 'pink'
         
         self.Valor_Introduce = tk.StringVar()
         self.Valor_Invierte = tk.StringVar()
@@ -24,7 +24,7 @@ class Juegos():
         
     def Elaboracion_Boton(self):
             
-        self.Resultado = tk.Button(Ventana, text = "Resultado", command = lambda: self.Invertir_Cosas(), cursor = self.Cursor, bg = "pink").place(x = 100, y = 70)
+        self.Resultado = tk.Button(Ventana, text = "Resultado", command = lambda: self.Invertir_Cosas(), cursor = self.Cursor, bg = self.Color).place(x = 100, y = 70)
         
     def Invertir_Cosas(self):
     
@@ -41,8 +41,9 @@ if __name__ == "__main__":
     Ventana = tk.Tk()
     Ventana.title("Mini - Juegos")
     Ventana.resizable(0,0)
-    Ventana.geometry("260x130")
-    Ventana.config(bg = "#AA00FF")
+    Ventana.geometry('260x130')
+    Ventana.config(bg = '#AA00FF')
+    Ventana.iconbitmap('C:\\Users\\Angelica Gerrero\\Desktop\\LenguajesDeProgramacion\\Icon\\ImagenesPython\\Toy.ico')
     
     Clase_Objeto = Juegos()
     Clase_Objeto.Elaboracion_Etiquetas()

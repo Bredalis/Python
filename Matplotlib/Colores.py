@@ -11,7 +11,7 @@ fig, Grafico = plt.subplots()
 Imagen = Grafico.imshow(
 
 	Matriz, cmap = plt.cm.winter, 
-	interpolation = "bilinear", extent = [1, 10, 1, 10]
+	interpolation = 'bilinear', extent = [1, 10, 1, 10]
 )
 
 def Diagrama_De_Puntos():
@@ -21,9 +21,9 @@ def Diagrama_De_Puntos():
 	Grado = np.pi*Matriz_Distancia
 	Colores = Grado
 
-	fig, Grafico = plt.subplots(subplot_kw = dict(projection = "polar"))
-	Visualizacion = Grafico.scatter(Grado, Matriz_Distancia, c = Colores, s = 100, cmap = "hsv")
+	fig, Grafico = plt.subplots(subplot_kw = dict(projection = 'polar'))
+	Visualizacion = Grafico.scatter(Grado, Matriz_Distancia, c = Colores, s = 100, cmap = 'hsv')
 
-	plt.colorbar(mappable = Visualizacion, location = "left")
+	plt.colorbar(mappable = Visualizacion, location = 'left')
 
 plt.show()

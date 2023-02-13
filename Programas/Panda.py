@@ -2,7 +2,7 @@ import turtle
 
 pen = turtle.Turtle()
 turtle.title("PANDA")
-turtle.Screen().bgcolor("#9736b3")
+turtle.Screen().bgcolor('#9736b3')
 pen.write("FAMILIA PANDA")
 
 class Body_complete () :
