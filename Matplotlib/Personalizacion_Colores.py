@@ -27,4 +27,6 @@ def Diagrama_De_Barras():
 	
 	Grafico.bar(Eje_X, Eje_Y, color = 'pink')
 
+print(Diagrama_De_Barras())
+
 plt.show()
