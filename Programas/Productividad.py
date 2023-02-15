@@ -6,8 +6,8 @@ fig, Grafica = plt.subplots()
 
 Datos = {
 	
-	"Habitos": ["Leer", "Programar", "Ejercicio", "Desarrollo Personal"],
-	"Ubicacion": [2, 4, 1, 3]
+	"Habitos": ["Leer", "Programar", "Ejercicio", "Desarrollo Personal", "Ingles", "Journalist", "Practicar", "Afirmaciones"],
+	"Ubicacion": [2, 4, 1, 3, 2, 1, 3, 5]
 
 }
 

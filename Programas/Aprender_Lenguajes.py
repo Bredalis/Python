@@ -6,14 +6,15 @@ fig, Grafica = plt.subplots()
 
 Datos = {
 
-	"Lenguajes": ["Keras", "TensorFlow", "Pytorch", "SQL", "Notion", "Patrones Diseño", "Neural Network"],
-	"Ubicacion": [3, 4, 5, 6, 7, 8, 9]
+	"Lenguajes": ["Keras", "TensorFlow", "Pytorch", "SQL", "Patrones Diseño", "Neural Network"],
+	"Colores": ["#F44336","#29B6F6", "#4CAF50", "#757575", "pink", "#FFF59D"],
+	"Ubicacion": [3, 4, 5, 6, 8, 9]
 
 }
 
 Lenguajes = pd.DataFrame(Datos)
 
-Grafica.bar(Lenguajes.Lenguajes, Lenguajes.Ubicacion, color = '#00ACC1')
+Grafica.bar(Lenguajes.Lenguajes, Lenguajes.Ubicacion, color = Lenguajes.Colores)
 
 Grafica.set_yticks(range(3, 10, 1))
 
