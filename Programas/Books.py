@@ -16,6 +16,4 @@ pd.options.display.max_columns = None
 
 Tabla_Libros = pd.DataFrame(Datos)
 
-print("Libros")
-
-print(Tabla_Libros)
+print(f"Libros \n {Tabla_Libros}")

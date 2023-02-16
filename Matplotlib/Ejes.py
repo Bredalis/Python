@@ -50,6 +50,4 @@ def Data_Frame():
 
 	Grafico.tick_params(axis = 'x', which = 'major', labelsize = 14, labelrotation = 15)
 
-print(Data_Frame())
-
 plt.show()
