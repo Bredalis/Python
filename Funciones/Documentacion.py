@@ -5,13 +5,11 @@ doctest.testmod()
 
 def Area_Triangulo(base, altura):
 
-	""" 
-    
+	"""     
 	Calcula
 
 	>>> Triangulo(3, 6)
 	'El area es 9.0'
-
 
 	"""
 
@@ -20,12 +18,11 @@ def Area_Triangulo(base, altura):
 def Arroba_Identificacion(email):
 
 	"""
-
 	La Funcion
 
 	>>> Arroba_Identificacion('bredalisgmail.com')
 	False
-
+	
 	"""
 
 	Arroba = email.count('@')

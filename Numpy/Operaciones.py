@@ -19,7 +19,6 @@ def Metodos():
 	Matriz_1D = np.array([90, 7, 9, 4, 2, 1])
 	
 	print(np.power(Matriz_1D, 2))
-
 	print(np.sort(Matriz_1D))
 
 	print(Matriz_2.max(), np.array(Matriz_2.min()))

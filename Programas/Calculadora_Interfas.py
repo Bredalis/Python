@@ -6,8 +6,7 @@ Ventana = tk.Tk()
 Ventana.title("Interfaces Calculator")
 Ventana.geometry('700x420')
 Ventana.resizable(0,0)
-Ventana.config(bg = '#ffcdd2')
-Ventana.config(cursor = 'cross')
+Ventana.config(bg = '#ffcdd2', cursor = 'cross')
 
 Ventana.iconbitmap('C:\\Users\\Angelica Gerrero\\Desktop\\LenguajesDeProgramacion\\Icon\\ImagenesPython\\CalculadoraInterfas.ico')
 

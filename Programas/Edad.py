@@ -6,7 +6,7 @@ def Age():
 	Year  = int(input("Write your year : "))
 	Operaction = Year - int(tm.strftime('%Y'))
 	
-	print(f"Have {Operaction} year old")
+	print(f"You're {Operaction} years old")
 
 def Months():
 

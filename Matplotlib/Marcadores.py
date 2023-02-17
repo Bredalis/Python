@@ -10,7 +10,6 @@ Grafico.plot(
 	marker = 'D', markerfacecolor = '#ffff00', 
 	markersize = 20, markeredgecolor = 'k', 
 	fillstyle = 'top', markerfacecoloralt = 'green'
-
 )
 
 plt.show()

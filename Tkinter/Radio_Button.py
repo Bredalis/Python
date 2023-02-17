@@ -9,15 +9,12 @@ Opcion = tk.IntVar()
 def Eleccion():
 	
 	if Opcion.get() == 1:
-
 		Genero.config(text = "Has elegido masculino")
 
 	elif Opcion.get() == 2:
-
 	    Genero.config(text = "Has elegido femenina")
 
-	else:		
-
+	else:
 		Genero.config(text = "Has elegido otros")
 
 tk.Label(Ventana, text = "Genero :").pack()

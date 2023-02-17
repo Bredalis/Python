@@ -6,9 +6,11 @@ class Regulares():
 
 		self.Nombre  = "Sandra López"
 		self.Numeros = "78990"
-		self.Cadena = "sandia 7kkhjijijijijiji"
+		self.Cadena = Nombre + str(Numeros)
 
-	def Buscar_Nombre(self):
+		# Metodos para buscar
+
+	def Nombre(self):
 
 		if re.match(".a", self.Nombre, re.IGNORECASE):
 
@@ -18,7 +20,7 @@ class Regulares():
 
 			print("No hemos encontrado el nombre")
 
-	def Buscar_Numeros(self):
+	def Numeros(self):
 
 		if re.match("\d", self.Numeros):
 

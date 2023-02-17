@@ -1,7 +1,6 @@
 
 import numpy as np
 
-Matriz_1D = np.array([1, 2, 3, 4, 5, 6])
 Matriz_2D = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 def Funciones_Estadisticas():

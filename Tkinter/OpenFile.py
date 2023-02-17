@@ -1,6 +1,6 @@
 
-import tkinter as tk
 from tkinter import filedialog
+import tkinter as tk
 
 roof = tk.Tk()
 roof.title("Open File")

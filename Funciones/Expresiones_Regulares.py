@@ -5,8 +5,8 @@ class Regulares:
 
 	def __init__(self):
 
-		self.Cadena = "Vamos a aprender expresiones regulares , Python , Python Python"
-		self.Texto_Buscar = "aprender"
+		self.Cadena = "Vamos a aprender expresiones regulares con Python"
+		self.Texto_Buscar = input("Escribe el texto que quieres buscar :")
 		self.Texto_Encontrado = re.search(self.Texto_Buscar, self.Cadena)
 
 	def Buscar(self):

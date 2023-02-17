@@ -7,7 +7,6 @@ doctest.testmod()
 def Raiz_Cuadrada(numero):
 
 	"""
-
 	Raiz
 
 	>>> lista=[]
@@ -15,7 +14,7 @@ def Raiz_Cuadrada(numero):
 	...     lista.append(elemento)
 	>>> Raiz_Cuadrada(lista)
 	[2.0, 3.0, 4.0]
-
+	
 	"""
 
 	return [math.sqrt(elemento) for elemento in numero]
