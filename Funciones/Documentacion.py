@@ -3,7 +3,7 @@ import doctest
 
 doctest.testmod()
 
-def Area_Triangulo(Base, Altura):
+def Area_Triangulo(base, altura):
 
 	""" 
     
@@ -15,9 +15,9 @@ def Area_Triangulo(Base, Altura):
 
 	"""
 
-	return f"El area es {str((Base*Altura)/2)}"
+	return f"El area es {str((base*altura)/2)}"
 
-def Arroba_Identificacion(Email):
+def Arroba_Identificacion(email):
 
 	"""
 
@@ -28,9 +28,9 @@ def Arroba_Identificacion(Email):
 
 	"""
 
-	Arroba = Email.count('@')
+	Arroba = email.count('@')
 
-	if (Arroba != 0 or Email.rfind('@') == (len(Email) + 1) or Email.find('@') == 0):
+	if (Arroba != 0 or email.rfind('@') == (len(email) + 1) or email.find('@') == 0):
 
 		return True
 

@@ -2,7 +2,6 @@
 import numpy as np
 
 Matriz_1 = np.arange(24).reshape(4, 6)
-
 Matriz_2 = np.array([[2, 3, 4, 5, 6, 7]])
 
 def Elaboraciones():

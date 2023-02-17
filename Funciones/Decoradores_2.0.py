@@ -1,6 +1,4 @@
 
-from Decoradores import Suma, Resta
-
 def Decorador(funcion_parametro):                                                           
 	def Funcion_Interna(*args, **kwargs):
 		

@@ -1,7 +1,9 @@
 
 import calendar
 
-def Validacion_Numero(Numero):
+# Funciones que validan los diferentes inputs
+
+def Numero(Numero):
 
     try:
 
@@ -9,11 +11,11 @@ def Validacion_Numero(Numero):
 
     except:
 
-        Numero = Validacion_Numero(input("Caracter no valido: "))
+        Numero = Numero(input("Caracter no valido: "))
     
     return Numero
 
-def Validacion_Opciones(Opciones):
+def Opciones(Opciones):
 
     while Opciones != ("Si") and Opciones != ("No"):
 
@@ -21,7 +23,7 @@ def Validacion_Opciones(Opciones):
 
     return(Opciones)
 
-def VALIDAR_OPCION_A_B(Opcion_Entrada):
+def OPCION_A_B(Opcion_Entrada):
 
     while Opcion_Entrada != ("A") and Opcion_Entrada != ("B"):
 
@@ -29,19 +31,19 @@ def VALIDAR_OPCION_A_B(Opcion_Entrada):
 
     return Opcion_Entrada
 
-def VALIDAR_Year(Year_Entrada):
+def Year(Year_Entrada):
 
     while Year_Entrada < 1 or Year_Entrada > 9999:
 
-        Year_Entrada = Validacion_Numero(input("Introduzca un año valido: "))
+        Year_Entrada = Numero(input("Introduzca un año valido: "))
 
     return Year_Entrada
 
-def VALIDAR_MES(Mes_Entrada):
+def MES(Mes_Entrada):
 
      while Mes_Entrada < 1 or Mes_Entrada > 12:
 
-        Mes_Entrada = Validacion_Numero(input("Introduzca un mes valido: "))
+        Mes_Entrada = Numero(input("Introduzca un mes valido: "))
 
      return Mes_Entrada
 
@@ -54,11 +56,11 @@ while True:
         B)Ver el calendario correspondiente a un año y mes determinados.
         """)
     
-    Opcion = VALIDAR_OPCION_A_B(input("Introduzca su opción(A/B): "))
+    Opcion = OPCION_A_B(input("Introduzca su opción(A/B): "))
 
     if Opcion == ("A"):
 
-        Year = VALIDAR_Year(Validacion_Numero(input("Introduce el año cuyos calendarios desea ver: ")))
+        Year = Year(Numero(input("Introduce el año cuyos calendarios desea ver: ")))
         
         Calendario_Texto = calendar.TextCalendar()
 
@@ -66,8 +68,8 @@ while True:
 
     else:
 
-        Year = VALIDAR_Year(Validacion_Numero(input("Introduzca el año: ")))
-        Mes = VALIDAR_MES(Validacion_Numero(input("Introduzca mes: ")))
+        Year = Year(Numero(input("Introduzca el año: ")))
+        Mes = MES(Numero(input("Introduzca mes: ")))
 
         Calendario_Texto = calendar.TextCalendar()
 
@@ -75,7 +77,7 @@ while True:
 
     print("\n" + Calendario)
         
-    Opcion_Continuar = Validacion_Opciones(input("¿Desea continuar?(Si/No): "))
+    Opcion_Continuar = Opciones(input("¿Desea continuar?(Si/No): "))
 
     if Opcion_Continuar == ("No"):
         

@@ -22,9 +22,9 @@ def Eleccion():
 
 tk.Label(Ventana, text = "Genero :").pack()
 
-Maculino = tk.Radiobutton(Ventana, text = "Masculino", variable = Opcion, value = 1, command = lambda: Eleccion()).pack()
-Femenino = tk.Radiobutton(Ventana, text = "Femenino" , variable = Opcion, value = 2, command = lambda: Eleccion()).pack()
-Otros = tk.Radiobutton(Ventana, text = "Otras opciones", variable = Opcion, value = 3, command = lambda: Eleccion()).pack()
+tk.Radiobutton(Ventana, text = "Masculino", variable = Opcion, value = 1, command = lambda: Eleccion()).pack()
+tk.Radiobutton(Ventana, text = "Femenino" , variable = Opcion, value = 2, command = lambda: Eleccion()).pack()
+tk.Radiobutton(Ventana, text = "Otras opciones", variable = Opcion, value = 3, command = lambda: Eleccion()).pack()
 
 Genero = tk.Label(Ventana)
 Genero.pack()

@@ -9,7 +9,6 @@ Datos = {
 	"Lenguajes": ["Keras", "TensorFlow", "Pytorch", "SQL", "Patrones Diseño", "Neural Network"],
 	"Colores": ["#F44336","#29B6F6", "#4CAF50", "#757575", "pink", "#FFF59D"],
 	"Ubicacion": [3, 4, 5, 6, 8, 9]
-
 }
 
 Lenguajes = pd.DataFrame(Datos)

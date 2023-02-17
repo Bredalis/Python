@@ -20,7 +20,7 @@ def Funciones():
 def Tipos_Matrices():
 
 	Ceros = np.zeros((3, 4))
-
+	
 	Unos = np.ones((3, 4))
 
 	Matriz_1D = np.arange(10)

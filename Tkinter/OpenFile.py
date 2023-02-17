@@ -2,10 +2,10 @@
 import tkinter as tk
 from tkinter import filedialog
 
-root = tk.Tk()
-root.title("Open File")
-root.geometry('100x30')
-root.resizable(0,0)
+roof = tk.Tk()
+roof.title("Open File")
+roof.geometry('100x30')
+roof.resizable(0,0)
 
 def Open_File():
 
@@ -13,6 +13,6 @@ def Open_File():
 	
 	print(File)
 
-tk.Button(root, text = "Open File", command = lambda: Open_File(), bg = '#EEFF41').pack()
+tk.Button(roof, text = "Open File", command = lambda: Open_File(), bg = '#EEFF41').pack()
 
-root.mainloop()
+roof.mainloop()
