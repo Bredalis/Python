@@ -9,14 +9,6 @@ Ventana.resizable(0,0)
 
 Ventana.iconbitmap('C:\\Users\\Angelica Gerrero\\Desktop\\LenguajesDeProgramacion\\Icon\\ImagenesPython\\Calculadora.ico')
 
-Texto = tk.IntVar()
-Numero = ""
-Numero_2 = ""
-Operacion = ""
-
-Mi_Entry = tk.Entry(Ventana, textvariable = Texto, width = 50, justify = 'right')
-Mi_Entry.grid(column = 0, row = 0, columnspan = 5)
-
 def Clean():
 	Mi_Entry.delete(0, tk.END)
 
@@ -29,7 +21,13 @@ def Reclick(Valor):
 
 def Binario():
 
-	pass
+	global Numero
+	global Operacion
+
+	Numero = Mi_Entry.get()
+	Numero = int(Numero)
+
+	Operacion = 'B'
 
 def Suma():
 
@@ -116,6 +114,10 @@ def Resultado():
 		
 		Mi_Entry.insert(0, Numero ** Numero_2)
 
+	if Operacion == 'B':
+
+		Mi_Entry.insert(0, bin(Numero)[2:])
+
 	if Operacion == '/':
 
 		try:
@@ -125,6 +127,14 @@ def Resultado():
 		except ZeroDivisionError:
 
 			Mi_Entry.insert(0, "Error")
+
+Texto = tk.IntVar()
+Numero = ""
+Numero_2 = ""
+Operacion = ""
+
+Mi_Entry = tk.Entry(Ventana, textvariable = Texto, width = 50, justify = 'right')
+Mi_Entry.grid(column = 0, row = 0, columnspan = 5)
 
 tk.Button(Ventana, text = '1', bg = '#E0E0E0', cursor = 'hand2', width = 15, height = 5, activebackground = '#AB47BC', command = lambda: Reclick(1)).grid(column = 1, row = 1)
 tk.Button(Ventana, text = '2', bg = '#E0E0E0', cursor = 'hand2', width = 15, height = 5, activebackground = '#AB47BC', command = lambda: Reclick(2)).grid(column = 2, row = 1)
