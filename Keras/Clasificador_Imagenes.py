@@ -32,7 +32,7 @@ for i in range(len(ids_imgs)):
 	plt.axis('off')
 	plt.title(y_train[ids_imgs[i]])
 
-plt.subtitle('16 imagenes del set MNIST')
+plt.suptitle('16 imagenes del set MNIST')
 plt.show()
 
 # Pre-procesamiento: para introducir a la red neuronal debemos
