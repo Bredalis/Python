@@ -7,7 +7,8 @@ DF = pd.DataFrame({
 	'Columna2': ['a', 'b', 'c', 'd']
 })
 
-# Devuelve partes del dataframe
+# Seleccion de filas
+# Posicion
 
 print(DF.iloc[:3])
 
