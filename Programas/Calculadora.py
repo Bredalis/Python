@@ -3,7 +3,7 @@ import tkinter as tk
 import math  
 
 Ventana = tk.Tk()
-Ventana.geometry('450x448')
+Ventana.geometry('450x448') #.lstrip('0')
 Ventana.title("CALCULATOR")
 Ventana.resizable(0,0)
 
@@ -21,21 +21,21 @@ def Reclick(Valor):
 
 def Binario():
 
-	global Numero
+	global Numero_1
 	global Operacion
 
-	Numero = Mi_Entry.get()
-	Numero = int(Numero)
+	Numero_1 = Mi_Entry.get()
+	Numero_1 = int(Numero_1)
 
 	Operacion = 'B'
 
 def Suma():
 
-    global Numero
+    global Numero_1
     global Operacion
 
-    Numero = Mi_Entry.get()
-    Numero = float(Numero)
+    Numero_1 = Mi_Entry.get()
+    Numero_1 = float(Numero_1)
 
     Mi_Entry.delete(0, tk.END)
 
@@ -43,11 +43,11 @@ def Suma():
 
 def Resta():
 
-	global Numero 
+	global Numero_1 
 	global Operacion
 
-	Numero = Mi_Entry.get()
-	Numero = float(Numero)
+	Numero_1 = Mi_Entry.get()
+	Numero_1 = float(Numero_1)
 
 	Mi_Entry.delete(0, tk.END)
 
@@ -55,11 +55,11 @@ def Resta():
 
 def Multiplicacion():
 
-	global Numero
+	global Numero_1
 	global Operacion
 
-	Numero = Mi_Entry.get()
-	Numero = float(Numero)
+	Numero_1 = Mi_Entry.get()
+	Numero_1 = float(Numero_1)
 
 	Mi_Entry.delete(0, tk.END)
 
@@ -67,11 +67,11 @@ def Multiplicacion():
 
 def Division():
 
-	global Numero
+	global Numero_1
 	global Operacion
 
-	Numero = Mi_Entry.get()
-	Numero = float(Numero)
+	Numero_1 = Mi_Entry.get()
+	Numero_1 = float(Numero_1)
 
 	Mi_Entry.delete(0, tk.END)
 
@@ -79,11 +79,11 @@ def Division():
 
 def Potencia():
 
-	global Numero
+	global Numero_1
 	global Operacion
 
-	Numero = Mi_Entry.get()
-	Numero = float(Numero)
+	Numero_1 = Mi_Entry.get()
+	Numero_1 = float(Numero_1)
 
 	Mi_Entry.delete(0, tk.END)
 
@@ -100,36 +100,36 @@ def Resultado():
 
 	if Operacion == '+' :
 
-		Mi_Entry.insert(0, Numero + Numero_2)
+		Mi_Entry.insert(0, Numero_1 + Numero_2)
 
 	if Operacion == '-' :
 
-		Mi_Entry.insert(0, Numero - Numero_2)
+		Mi_Entry.insert(0, Numero_1 - Numero_2)
 
 	if Operacion == '*' :
 
-		Mi_Entry.insert(0, Numero * Numero_2)
+		Mi_Entry.insert(0, Numero_1 * Numero_2)
 
 	if Operacion == '^' :
 		
-		Mi_Entry.insert(0, Numero ** Numero_2)
+		Mi_Entry.insert(0, Numero_1 ** Numero_2)
 
 	if Operacion == 'B':
 
-		Mi_Entry.insert(0, bin(Numero)[2:])
+		Mi_Entry.insert(0, bin(Numero_1)[2:])
 
 	if Operacion == '/':
 
 		try:
 
-			Mi_Entry.insert(0, Numero / Numero_2)
+			Mi_Entry.insert(0, Numero_1 / Numero_2)
 
 		except ZeroDivisionError:
 
 			Mi_Entry.insert(0, "Error")
 
-Texto = tk.IntVar()
-Numero = ""
+Texto = tk.IntVar().set("")
+Numero_1 = ""
 Numero_2 = ""
 Operacion = ""
 
@@ -143,6 +143,7 @@ tk.Button(Ventana, text = '3', bg = '#E0E0E0', cursor = 'hand2', width = 15, hei
 tk.Button(Ventana, text = '4', bg = '#E0E0E0', cursor = 'hand2', width = 15, height = 5, activebackground = '#AB47BC', command = lambda: Reclick(4)).grid(column = 1, row = 2)
 tk.Button(Ventana, text = '5', bg = '#66BB6A', cursor = 'hand2', width = 15, height = 5, activebackground = '#F48FB1', command = lambda: Reclick(5)).grid(column = 2, row = 2)
 tk.Button(Ventana, text = '6', bg = '#66BB6A', cursor = 'hand2', width = 15, height = 5, activebackground = '#F48FB1', command = lambda: Reclick(6)).grid(column = 3, row = 2)
+
 tk.Button(Ventana, text = '7', bg = '#E0E0E0', cursor = 'hand2', width = 15, height = 5, activebackground = '#AB47BC', command = lambda: Reclick(7)).grid(column = 1, row = 3)
 tk.Button(Ventana, text = '8', bg = '#66BB6A', cursor = 'hand2', width = 15, height = 5, activebackground = '#F48FB1', command = lambda: Reclick(8)).grid(column = 2, row = 3)
 tk.Button(Ventana, text = '9', bg = '#66BB6A', cursor = 'hand2', width = 15, height = 5, activebackground = '#F48FB1', command = lambda: Reclick(9)).grid(column = 3, row = 3)

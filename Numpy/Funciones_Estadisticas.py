@@ -1,42 +1,42 @@
 
 import numpy as np
 
-Matriz_2D = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+matriz_2d = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 def Funciones_Estadisticas():
 
 	# Mayor elemento de filas
 
-	print(np.amax(Matriz_2D, 0))
+	print(np.amax(matriz_2d, 0))
 
 	# Menor elemento de columnas
 
-	print(np.amin(Matriz_2D, 1))
+	print(np.amin(matriz_2d, 1))
 
 	# Rango de columnas
 
-	print(np.ptp(Matriz_2D, axis = 1))
+	print(np.ptp(matriz_2d, axis = 1))
 
 	# Rango de filas
 
-	print(np.ptp(Matriz_2D, axis = 0))
+	print(np.ptp(matriz_2d, axis = 0))
 
 def Formulas():
 
 	# Percectil de filas
 
-	print(np.percentile(Matriz_2D, 50, axis = 0))
+	print(np.percentile(matriz_2d, 50, axis = 0))
 
-	print(np.median(Matriz_2D))
+	print(np.median(matriz_2d))
 
 	# Media Aritmetica
 
-	print(np.mean(Matriz_2D))
+	print(np.mean(matriz_2d))
 
 	# Promedio Ponderado
 
-	print(np.average(Matriz_1D))
+	print(np.average(matriz_1d))
 
 	# Desviacion Estandar
 
-	print(np.std(Matriz_1D))
+	print(np.std(matriz_1d))

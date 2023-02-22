@@ -1,20 +1,20 @@
 import re
 
-class Regulares():
+class Expresiones_Regulares():
 
 	def __init__(self):
 
-		self.Nombre  = "Sandra López"
-		self.Numeros = "78990"
-		self.Cadena = Nombre + str(Numeros)
+		self.nombre  = "Sandra López"
+		self.numeros = "78990"
+		self.cadena = nombre + str(numeros)
 
 		# Metodos para buscar
 
 	def Nombre(self):
 
-		if re.match(".a", self.Nombre, re.IGNORECASE):
+		if re.match(".a", self.nombre, re.IGNORECASE):
 
-			print(self.Nombre)
+			print(self.nombre)
 
 		else:
 
@@ -22,7 +22,7 @@ class Regulares():
 
 	def Numeros(self):
 
-		if re.match("\d", self.Numeros):
+		if re.match("\d", self.numeros):
 
 			print("Hemos encontrado el numero")
 
@@ -30,7 +30,7 @@ class Regulares():
 
 			print("No lo hemos encontrado")
 
-		if re.search("7", self.Numeros, re.IGNORECASE):
+		if re.search("7", self.numeros, re.IGNORECASE):
 
 			print("Hemos encontrado el numero")
 
@@ -38,6 +38,6 @@ class Regulares():
 
 			print("No hemos encontrado el numero")
 
-Objeto_Clase = Regulares()
-Objeto_Clase.Buscar_Nombre()
-Objeto_Clase.Buscar_Numeros()
+objeto_clase = Expresiones_Regulares()
+objeto_clase.Buscar_Nombre()
+objeto_clase.Buscar_Numeros()

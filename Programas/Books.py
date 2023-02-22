@@ -1,5 +1,6 @@
 
 import pandas as pd
+import time
 
 Datos = {
 
@@ -16,4 +17,5 @@ pd.options.display.max_columns = None
 
 Tabla_Libros = pd.DataFrame(Datos)
 
-print(f"Libros \n {Tabla_Libros}")
+print(time.strftime('%t'), "Libros")
+print(Tabla_Libros)

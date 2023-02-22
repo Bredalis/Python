@@ -6,15 +6,9 @@ class Algoritmos:
 
 	def Ordena_Listas(self, Lista):
 
-		print("Ordenando tus listas...\n")
-
-		Lista.sort()
-
-		print(Lista)
+		print(Lista.sort())
 
 	def Ordena_Palabras(self, Palabras):
-
-		print("\n¡Palabras Alreves!")
 
 		print(Palabras[:: -1].capitalize())
 

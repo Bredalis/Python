@@ -25,9 +25,9 @@ def Arroba_Identificacion(email):
 	
 	"""
 
-	Arroba = email.count('@')
+	arroba = email.count('@')
 
-	if (Arroba != 0 or email.rfind('@') == (len(email) + 1) or email.find('@') == 0):
+	if (arroba != 0 or email.rfind('@') == (len(email) + 1) or email.find('@') == 0):
 
 		return True
 
@@ -36,5 +36,4 @@ def Arroba_Identificacion(email):
 		return False
 
 print(Area_Triangulo(4, 7))
-
 print(Arroba_Identificacion("@"))

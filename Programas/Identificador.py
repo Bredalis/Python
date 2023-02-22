@@ -1,17 +1,17 @@
 
 # Programa de identificacion de Datos
 
-def Valor(Dato):
+def Valor(*Datos):
 
-	if type(Dato) == int:
+	if type(Datos) == int:
 
 		print("Entero")
 
-	elif type(Dato) == str:
+	elif type(Datos) == str:
 
 		print("Letras")
 
-	elif type(Dato) == float:
+	elif type(Datos) == float:
 
 		print("Decimal")
 
@@ -19,17 +19,17 @@ def Valor(Dato):
 
 		print("No Identificado")
 
-def Estructura_Datos(Dato):
+def Estructura_Datos(Datos):
 
-	if type(Dato) == list:
+	if type(Datos) == list:
 
 		print("Lista")
 
-	elif type(Dato) == tuple:
+	elif type(Datos) == tuple:
 
 		print("Tupla")
 
-	elif type(Dato) == dict:
+	elif type(Datos) == dict:
 
 		print("Diccionario")
 
@@ -39,9 +39,9 @@ def Estructura_Datos(Dato):
 
 def Numeros():
 
-	Dato = int(input("Introduce el numero: "))
+	Datos = int(input("Introduce el numero: "))
 
-	if Dato % 2 == 0:
+	if Datos % 2 == 0:
 
 		print("Par")
 

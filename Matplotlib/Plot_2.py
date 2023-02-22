@@ -3,35 +3,35 @@ from matplotlib.patches import Polygon
 import matplotlib.pyplot as plt
 import numpy as np
 
-def Fun(X):
+def Fun(x):
 
-	return (X-3)*(X-5)*(X-7)+85
+	return (x-3)*(x-5)*(x-7)+85
 
 a, b = 2, 9
 
-X = np.linspace(0, 10)
-Y = Fun(X)
+x = np.linspace(0, 10)
+y = Fun(x)
 
-fig, Grafica = plt.subplots()
+fig, grafico = plt.subplots()
 
-Grafica.plot(X, Y, 'r', linewidth = 2)
-Grafica.set_ylim(bottom = 20)
+grafico.plot(x, y, 'r', linewidth = 2)
+grafico.set_ylim(bottom = 20)
 
 ix = np.linspace(a, b)
 iy = Fun(ix)
 
-Vertices = [(a, b), *zip(ix, iy), (b, 0)]
+vertices = [(a, b), *zip(ix, iy), (b, 0)]
 
-Poly = Polygon(Vertices, facecolor = '0.9', edgecolor = '0.5')
+Poly = Polygon(vertices, facecolor = '0.9', edgecolor = '0.5')
 
-Grafica.add_patch(Poly)
+grafico.add_patch(Poly)
 
-Grafica.text(0.5*(a+b), 30, r'$\int_a^b f(X)\mathrm{d}x$', horizontalalignment = 'center', fontsize = 20)
+grafico.text(0.5*(a+b), 30, r'$\int_a^b f(x)\mathrm{d}x$', horizontalalignment = 'center', fontsize = 20)
 
-fig.text(0.9, 0.5, '$X$')
-fig.text(0.1, 0.9, '$Y$')
+fig.text(0.9, 0.5, '$x$')
+fig.text(0.1, 0.9, '$y$')
 
-Grafica.xaxis.set_ticks_position('bottom')
-Grafica.set_xticks([a, b], ['$a$', '$b$'])
+grafico.xaxis.set_ticks_position('bottom')
+grafico.set_xticks([a, b], ['$a$', '$b$'])
 
 plt.show()

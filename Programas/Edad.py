@@ -4,20 +4,20 @@ import time as tm
 def Age():
 
 	Year  = int(input("Write your year : "))
-	Operaction = Year - int(tm.strftime('%Y'))
+	Operation = Year - int(tm.strftime('%Y'))
 	
-	print(f"You're {Operaction} years old")
+	print(f"You're {Operation} years old")
 
 def Months():
 
 	Month = int(input("Write your month : "))
-	Operaction = Month - int(tm.strftime('%m'))
+	Operation = Month - int(tm.strftime('%m'))
 
-	print(f"Have {Operaction} months")
+	print(f"Have {Operation} months")
 
 def Days():
 
 	Date  = int(input("Write your date : "))
-	Operaction = Date - int(tm.strftime('%d'))
+	Operation = Date - int(tm.strftime('%j'))
 
-	print(f"Have {Operaction} days of life")
+	print(f"Have {Operation} days of life")

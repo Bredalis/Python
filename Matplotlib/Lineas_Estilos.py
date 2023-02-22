@@ -2,29 +2,29 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-Eje_X = np.linspace(0.1, 6)
-Eje_Y = np.sin(Eje_X)
+eje_x = np.linspace(0.1, 6)
+eje_y = np.sin(eje_x)
 
 def Estilo_Puntos():
 
-	plt.plot(Eje_X, Eje_Y, linewidth = 3, linestyle = '-')
+	plt.plot(eje_x, eje_y, linewidth = 3, linestyle = '-')
 
 def Estilo_Stem():
 
-	plt.stem(Eje_X, Eje_Y, linefmt = ('g', ':'), markerfmt = 'D', basefmt = 'C3--')
+	plt.stem(eje_x, eje_y, linefmt = ('g', ':'), markerfmt = 'D', basefmt = 'C3--')
 
 def Estilo_Set():
 
-	fig, Grafico = plt.subplots()
+	fig, grafico = plt.subplots()
 
-	Grafico.stem(Eje_X, Eje_Y, linefmt = ('p', ':'), markerfmt = 'D', basefmt = 'C3--')
+	grafico.stem(eje_x, eje_y, linefmt = ('p', ':'), markerfmt = 'D', basefmt = 'C3--')
 
-	Grafico.spines['left'].set_color('blue')
-	Grafico.spines['left'].set_linewidth(3)
-	Grafico.spines['left'].set_alpha(0.8)
-	Grafico.spines['left'].set_linestyle('dashed')
-	Grafico.spines['left'].set_visible(True)
+	grafico.spines['left'].set_color('blue')
+	grafico.spines['left'].set_linewidth(3)
+	grafico.spines['left'].set_alpha(0.8)
+	grafico.spines['left'].set_linestyle('dashed')
+	grafico.spines['left'].set_visible(True)
 
-	Grafico.grid(True, linewidth = 2)
+	grafico.grid(True, linewidth = 2)
 
 plt.show()

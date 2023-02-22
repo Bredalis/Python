@@ -15,7 +15,7 @@ Window.rowconfigure(1, weight = 1)
 
 def Clock(): 
 
-	Hour = time.strftime('%I:%M:%S %p')
+	Hour = time.strftime('%r')
 	Day = time.strftime('%A') 
 	Month = time.strftime('%d-%m-%Y')
 

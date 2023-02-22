@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-DF = pd.DataFrame({
+df = pd.DataFrame({
 
 	'Columna1': [1, 2, 3, 4], 
 	'Columna2': ['a', 'b', 'c', 'd']
@@ -10,10 +10,10 @@ DF = pd.DataFrame({
 # Seleccion de filas
 # Posicion
 
-print(DF.iloc[:3])
+print(df.iloc[:3])
 
-print(DF.sort_values('Columna1', ascending = False))
+print(df.sort_values('Columna1', ascending = False))
 
 # Develve los numeros de esa columna en negativo
 
-print(DF['Columna1'].apply(lambda X: -X))
+print(df['Columna1'].apply(lambda X: -X))

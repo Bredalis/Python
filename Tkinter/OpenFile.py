@@ -9,10 +9,10 @@ roof.resizable(0,0)
 
 def Open_File():
 
-	File = filedialog.askopenfilename(title = "Open", initialdir = "C:", filetypes = (("New folder", "*.py"), ("tkinter", "*.py")))
+	file = filedialog.askopenfilename(title= "Open", initialdir= "C:", filetypes= (("New folder", "*.py"), ("tkinter", "*.py")))
 	
-	print(File)
+	print(file)
 
-tk.Button(roof, text = "Open File", command = lambda: Open_File(), bg = '#EEFF41').pack()
+tk.Button(roof, text= "Open file", command= lambda: Open_File(), bg= '#EEFF41').pack()
 
 roof.mainloop()

@@ -1,8 +1,8 @@
 
 import pandas as pd
 
-Serie = pd.Series([1, 2, 3])
+serie = pd.Series([1, 2, 3])
 
-Serie.name = 'Numeros'
+serie.name = 'Numeros'
 
-print(Serie)
+print(serie)

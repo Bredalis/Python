@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 # Elaboracion de graficas
 
-fig, Grafica = plt.subplots()
+fig, grafico = plt.subplots()
 
-Grafica.plot([1, 2, 3, 4], [1, 2, 4, 3])
+grafico.plot([1, 2, 3, 4], [1, 2, 4, 3])
 
 def Version_POO():
 

@@ -1,37 +1,37 @@
 
 import numpy as np
 
-Matriz = np.arange(15).reshape(3, 5)
+matriz = np.arange(15).reshape(3, 5)
 
 def Funciones():
 
 	# Cantidades Filas y Columnas
 
-	print(Matriz.shape)
+	print(matriz.shape)
 
 	# Dimension
 
-	print(Matriz.ndim)
+	print(matriz.ndim)
 
 	# Cantidad de la Matriz
 
-	print(Matriz.size)
+	print(matriz.size)
 
 def Tipos_Matrices():
 
-	Ceros = np.zeros((3, 4))	
-	Unos = np.ones((3, 4))
+	ceros = np.zeros((3, 4))	
+	unos = np.ones((3, 4))
 
-	Matriz_1D = np.arange(10)
-	Matriz_3D = np.arange(27).reshape(3, 3, 3)
+	matriz_1d = np.arange(10)
+	matriz_3d = np.arange(27).reshape(3, 3, 3)
 	
-	Rapida = np.linspace(99, 88, 25)
+	rapida = np.linspace(99, 88, 25)
 
 	return(
 
-		f'''Matriz de unos: {Unos}
-			Matriz de Ceros: {Ceros} \n 
-			Matriz 1D: {Matriz_1D} \n
-			Matriz Rapida: {Rapida} \n
-			Matriz 3D: {Matriz_3D}'''
+		f'''Matriz de unos: {unos}
+			Matriz de Ceros: {ceros} \n 
+			Matriz 1D: {matriz_1d} \n
+			Matriz Rapida: {rapida} \n
+			Matriz 3D: {matriz_3d}'''
 		)

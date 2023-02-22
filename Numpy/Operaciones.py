@@ -1,37 +1,37 @@
 
 import numpy as np
 
-Matriz_1 = np.arange(24).reshape(4, 6)
-Matriz_2 = np.array([[2, 3, 4, 5, 6, 7]])
+matriz_1 = np.arange(24).reshape(4, 6)
+matriz_2 = np.array([[2, 3, 4, 5, 6, 7]])
 
 def Elaboraciones():
 
 	# Posicion de elementos
 
-	print(Matriz_1[3, 4])
+	print(matriz_1[3, 4])
 
-	print(np.concatenate((Matriz_1, Matriz_2)))
+	print(np.concatenate((matriz_1, matriz_2)))
 
-	print(np.array(Matriz_2 >= 4))
+	print(np.array(matriz_2 >= 4))
 
 def Metodos():
 
-	Matriz_1D = np.array([90, 7, 9, 4, 2, 1])
+	matriz_1d = np.array([90, 7, 9, 4, 2, 1])
 	
-	print(np.power(Matriz_1D, 2))
-	print(np.sort(Matriz_1D))
+	print(np.power(matriz_1d, 2))
+	print(np.sort(matriz_1d))
 
-	print(Matriz_2.max(), np.array(Matriz_2.min()))
+	print(matriz_2.max(), np.array(matriz_2.min()))
 
 def Operaciones_Basicas():
 
-	Lista = [
+	lista = [
 
-	np.add(Matriz_1, Matriz_2), 
-	np.subtract(Matriz_1, Matriz_2), 
-	np.multiply(Matriz_1, Matriz_2), 
-	np.divide(Matriz_1, Matriz_2),
+	np.add(matriz_1, matriz_2), 
+	np.subtract(matriz_1, matriz_2), 
+	np.multiply(matriz_1, matriz_2), 
+	np.divide(matriz_1, matriz_2),
 
 	]
 
-	return Lista
+	return lista

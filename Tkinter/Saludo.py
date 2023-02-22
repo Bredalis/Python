@@ -5,9 +5,9 @@ roof = tk.Tk()
 roof.title("¡Saludo!")
 roof.resizable(0,0)
 
-My_Frame = tk.Frame(roof, width = 500, height = 500, bg = 'pink')
-My_Frame.pack()
+my_frame = tk.Frame(roof, width= 500, height= 500, bg= 'pink')
+my_frame.pack()
 
-tk.Label(My_Frame, text = "Hola Mundo de la programacion", fg = 'blue', font = (18), bg = 'pink').pack()
+tk.Label(my_frame, text= "Hola Mundo de la programacion", fg= 'blue', font= (18), bg= 'pink').pack()
 
 roof.mainloop()

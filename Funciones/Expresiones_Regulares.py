@@ -1,17 +1,17 @@
 
 import re
 
-class Regulares:
+class Expresiones_Regulares:
 
 	def __init__(self):
 
-		self.Cadena = "Vamos a aprender expresiones regulares con Python"
-		self.Texto_Buscar = input("Escribe el texto que quieres buscar :")
-		self.Texto_Encontrado = re.search(self.Texto_Buscar, self.Cadena)
+		self.cadena = "Vamos a aprender expresiones regulares con Python"
+		self.texto_buscar = input("Escribe el texto que quieres buscar :")
+		self.texto_encontrado = re.search(self.texto_buscar, self.cadena)
 
 	def Buscar(self):
 
-		if re.search(self.Texto_Buscar, self.Cadena) is not None:
+		if re.search(self.texto_buscar, self.cadena) is not None:
 
 			print("He encontrado el texto")
 
@@ -19,16 +19,16 @@ class Regulares:
 
 			print("No he encontrado el texto")
 
-	def Imprimicion(self):
+	def Imprimir(self):
 
-		print(re.search("aprender", self.Cadena))
+		print(re.search("aprender", self.cadena))
 
-		print(self.Texto_Encontrado.start())
-		print(self.Texto_Encontrado.end())
-		print(self.Texto_Encontrado.span())
+		print(self.texto_encontrado.start())
+		print(self.texto_encontrado.end())
+		print(self.texto_encontrado.span())
 
-		print(len(re.findall(self.Texto_Buscar, self.Cadena)))
+		print(len(re.findall(self.texto_buscar, self.cadena)))
 
-Objeto_Clase = Regulares()
-Objeto_Clase.Buscar()
-Objeto_Clase.Imprimicion()
+objeto_clase = Expresiones_Regulares()
+objeto_clase.Buscar()
+objeto_clase.Imprimir()

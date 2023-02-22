@@ -3,9 +3,9 @@ import numpy as np
 
 def Suma():
 
-	Matriz_2D = np.array([[0, 1, 2], [4, 2, 3]])
+	matriz_2d = np.array([[0, 1, 2], [4, 2, 3]])
 
-	Filas = np.sum(Matriz_2D, axis = 0)	
-	Columnas = np.sum(Matriz_2D, axis = 1)
+	filas = np.sum(matriz_2d, axis = 0)	
+	columnas = np.sum(matriz_2d, axis = 1)
 
-	return f"Suma de filas {Filas}, columnas {Columnas}"
+	return f"Suma de filas {filas}, columnas {columnas}"

@@ -1,9 +1,9 @@
 
 import matplotlib.pyplot as plt
 
-fig, Grafico = plt.subplots(figsize = (6, 6))
+fig, grafico = plt.subplots(figsize = (6, 6))
 
-Grafico.plot(
+grafico.plot(
 
 	[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], 
 	

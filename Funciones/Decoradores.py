@@ -12,11 +12,9 @@ def Decorador(funcion_parametro):
 
 @Decorador
 def Suma():
-
 	print(34 + 56)
 
 def Resta():
-
 	print(34 - 56)
 
 Suma()
