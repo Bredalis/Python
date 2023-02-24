@@ -6,11 +6,9 @@ import calendar
 def Numero(Numero):
 
     try:
-
         Numero = int(Numero)
 
     except:
-
         Numero = Numero(input("Caracter no valido: "))
     
     return Numero
@@ -80,5 +78,5 @@ while True:
     Opcion_Continuar = Opciones(input("¿Desea continuar?(Si/No): "))
 
     if Opcion_Continuar == ("No"):
-        
+            
         break

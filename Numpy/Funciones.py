@@ -5,17 +5,9 @@ matriz = np.arange(15).reshape(3, 5)
 
 def Funciones():
 
-	# Cantidades Filas y Columnas
-
-	print(matriz.shape)
-
-	# Dimension
-
-	print(matriz.ndim)
-
-	# Cantidad de la Matriz
-
-	print(matriz.size)
+	print(matriz.shape) # Cantidades Filas y Columnas
+	print(matriz.ndim) # Dimension
+	print(matriz.size) # Cantidad de la Matriz
 
 def Tipos_Matrices():
 

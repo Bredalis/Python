@@ -3,7 +3,7 @@ import tkinter as tk
 import math  
 
 Ventana = tk.Tk()
-Ventana.geometry('450x448') #.lstrip('0')
+Ventana.geometry('450x448') 
 Ventana.title("CALCULATOR")
 Ventana.resizable(0,0)
 

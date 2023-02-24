@@ -18,6 +18,7 @@ def Sistema_De_Ecuaciones():
 
 	print(ecuacion_matrices)
 
-    # se utiliza para comprovar si dos matrices son iguales en cuanto a elementos dentro de una tolerancia
+    # se utiliza para comprovar si dos matrices son iguales 
+    # en cuanto a elementos dentro de una tolerancia
 
 	return np.allclose(np.dot(matriz_1, ecuacion_matrices), matriz_2)
