@@ -1,12 +1,12 @@
 
 import numpy as np
 
-lista = [1, 2, 3, 4, 5]
-lista_2d = [[1, 2, 3], [4, 5, 6 ], [7, 8, 9]]
+Lista = [1, 2, 3, 4, 5]
+Lista_2D = [[1, 2, 3], [4, 5, 6 ], [7, 8, 9]]
 
 def Combercion():
 
-	matriz_1 = np.array(lista)
-	matriz_2 = np.array(lista_2d)
+	Matriz_1 = np.array(Lista)
+	Matriz_2 = np.array(Lista_2D)
 
-	return(matriz_1, matriz_2)
+	return(Matriz_1, Matriz_2)

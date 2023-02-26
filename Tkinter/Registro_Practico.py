@@ -1,95 +1,99 @@
 
 import tkinter as tk
 
-class Registro:
+class Registro():
 
 	def __init__(self):			
 
-		self.valor_nombre = tk.StringVar()
-		self.valor_apellido = tk.StringVar()
-		self.valor_direccion  = tk.StringVar()
-		self.valor_contraseña = tk.StringVar()
+		self.Valor_Nombre = tk.StringVar()
+		self.Valor_Apellido = tk.StringVar()
+		self.Valor_Direccion  = tk.StringVar()
+		self.Valor_Contraseña = tk.StringVar()
 
-	def Elaboracion_Frame(self):
+	def Etiquetas(self):
 
-		self.mi_frame = tk.Frame(raiz, width = 1200, height = 600)
-		self.mi_frame.pack()
+		self.Nombre = tk.Label(Ventana, text = "Nombre: ")
+		self.Nombre.grid(row = 0, column = 0, sticky = 'e', padx = 10, pady = 10)		
 
-	def Elaboracion_Entrys(self):
+		self.Apellido = tk.Label(Ventana, text = "Apellido:")
+		self.Apellido.grid(row = 1, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.nombre = tk.Entry(self.mi_frame, textvariable= self.valor_nombre, width= 30, justify= 'center', fg= '#6D4C41')
-		self.nombre.grid(row= 0, column= 1, sticky= 'e', padx= 10, pady= 10)
+		self.Direccion = tk.Label(Ventana, text = "Direccion:")
+		self.Direccion.grid(row = 2, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.apellido = tk.Entry(self.mi_frame, textvariable = self.valor_apellido, justify= 'center', fg= '#6D4C41')
-		self.apellido.grid(row= 1, column= 1, sticky= 'e', padx= 10, pady= 10)
+		self.Contraseña = tk.Label(Ventana, text = "Contraseña:")
+		self.Contraseña.grid(row = 3, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.direccion = tk.Entry(self.mi_frame, textvariable= self.valor_direccion, justify= 'center', fg= '#6D4C41')
-		self.direccion.grid(row= 2, column= 1, sticky= 'e', padx= 10, pady = 10)
+		self.Comentario = tk.Label(Ventana, text = "Comentarios:")
+		self.Comentario.grid(row = 4, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.contraseña = tk.Entry(self.mi_frame, textvariable= self.valor_contraseña, justify= 'center', fg= '#6D4C41', show= "*")
-		self.contraseña.grid(row= 3, column = 1, sticky= 'e', padx = 10, pady= 10)
+	def Entrys(self):
 
-	def Elaboracion_Etiquetas(self):
+		self.Nombre = tk.Entry(Ventana, textvariable = self.Valor_Nombre, width = 30, justify = 'center', fg = '#6D4C41')
+		self.Nombre.grid(row = 0, column = 1, sticky = 'e', padx = 10, pady = 10)
 
-		self.nombre = tk.Label(self.mi_frame, text= "Nombre: ")
-		self.nombre.grid(row= 0, column= 0, sticky= 'e', padx= 10, pady= 10)		
+		self.Apellido = tk.Entry(Ventana, textvariable = self.Valor_Apellido, justify = 'center', fg = '#6D4C41')
+		self.Apellido.grid(row = 1, column = 1, sticky = 'e', padx = 10, pady = 10)
 
-		self.apellido = tk.Label(self.mi_frame, text= "Apellido:")
-		self.apellido.grid(row= 1, column= 0, sticky= 'e', padx= 10, pady= 10)
+		self.Direccion = tk.Entry(Ventana, textvariable = self.Valor_Direccion, justify = 'center', fg = '#6D4C41')
+		self.Direccion.grid(row = 2, column = 1, sticky = 'e', padx = 10, pady = 10)
 
-		self.direccion = tk.Label(self.mi_frame, text= "direccion:")
-		self.direccion.grid(row= 2, column= 0, sticky= 'e', padx= 10, pady= 10)
+		self.Contraseña = tk.Entry(Ventana, textvariable = self.Valor_Contraseña, justify = 'center', fg = '#6D4C41', show = "*")
+		self.Contraseña.grid(row = 3, column = 1, sticky = 'e', padx = 10, pady = 10)
 
-		self.contraseña = tk.Label(self.mi_frame, text= "Contraseña:")
-		self.contraseña.grid(row= 3, column= 0, sticky= 'e',padx= 10, pady= 10)
+	def Scrollbar(self):
 
-		self.comentario = tk.Label(self.mi_frame, text= "Comentarios:")
-		self.comentario.grid(row= 4, column= 0, sticky= 'e', padx= 10, pady= 10)
+		self.Caja_Texto = tk.Text(Ventana, width = 16, height = 5) 
+		self.Caja_Texto.grid(row = 4, column = 1, padx = 1, pady = 10)		
 
-	def Elaboracion_Scrollbar(self):
+		self.Scroll_Bar = tk.Scrollbar(Ventana, command = self.Caja_Texto.yview)
+		self.Scroll_Bar.grid(row = 4, column = 2, sticky = 'snw')	
 
-		self.caja_texto = tk.Text(self.mi_frame, width= 16, height= 5)
-		self.caja_texto.grid(row= 4, column= 1, padx= 1, pady= 10)		
+		self.Caja_Texto.configure(yscrollcommand = self.Scroll_Bar.set)
 
-		self.scrool_bal = tk.Scrollbar(self.mi_frame, command= self.caja_texto.yview)
-		self.scrool_bal.grid(row= 4, column= 2, sticky= 'snw')	
+	def Boton(self):
 
-		self.caja_texto.configure(yscrollcommand= self.scrool_bal.set)
-
-	def Elaboracion_Boton(self):
-
-		self.boton = tk.Button(raiz, text= "Guardar", command= lambda: self.Guardado())
-		self.boton.pack()
+		self.Boton = tk.Button(Ventana, text = "Guardar", command = lambda: self.Guardado())
+		self.Boton.grid(row = 5, column = 1)
 
 	def Guardado(self):
 
-		if(self.valor_nombre.get()):
+		if(self.Valor_Nombre.get() and self.Valor_Direccion.get() and self.Valor_Contraseña.get()):
 
-			self.boton.config(text= "Guardado")
+			self.Boton.config(text = "Guardado")
 
-			self.registro_valor = open("Registro_De_Interfas.txt", 'a')
+			self.Datos_Registro = open("Registro_De_Usuario.txt", 'a')
 
-			self.registro_valor.write(self.valor_nombre.get())
-			self.registro_valor.write("\n")
-			self.registro_valor.write(self.valor_apellido.get())
-			self.registro_valor.write("\n")
-			self.registro_valor.write(self.valor_contraseña.get())
-			self.registro_valor.write("\n")
-			self.registro_valor.write(self.valor_direccion.get())
+			self.Datos_Registro.write("Datos del Registro")
+
+			self.Datos_Registro.write("\n\n")
+			self.Datos_Registro.write("Nombre: ")
+			self.Datos_Registro.write(self.Valor_Nombre.get())
+			self.Datos_Registro.write("\n\n")
+			self.Datos_Registro.write("Apellido: ")
+			self.Datos_Registro.write(self.Valor_Apellido.get())
+			self.Datos_Registro.write("\n\n")
+			self.Datos_Registro.write("Contraseña: ")
+			self.Datos_Registro.write(self.Valor_Contraseña.get())
+			self.Datos_Registro.write("\n\n")
+			self.Datos_Registro.write("Direccion: ")
+			self.Datos_Registro.write(self.Valor_Direccion.get())
+			self.Datos_Registro.write("\n\n")
 			
-			self.registro_valor.close()
+			self.Datos_Registro.close()
+
+			[self.Valor_Nombre.set(""), self.Valor_Apellido.set(""),self.Valor_Contraseña.set(""), self.Valor_Direccion.set("")]
 
 if __name__ == "__main__":
 
-	raiz = tk.Tk()
-	raiz.title("Registro")
-	raiz.resizable(0,0)
+	Ventana = tk.Tk()
+	Ventana.title("Registro")
+	Ventana.resizable(0,0)
 
-	objeto_clase = Registro()
-	objeto_clase.Elaboracion_Frame()
-	objeto_clase.Elaboracion_Entrys()
-	objeto_clase.Elaboracion_Etiquetas()
-	objeto_clase.Elaboracion_Scrollbar()
-	objeto_clase.Elaboracion_Boton()
+	Clase_Objeto = Registro()
+	Clase_Objeto.Etiquetas()
+	Clase_Objeto.Entrys()
+	Clase_Objeto.Scrollbar()
+	Clase_Objeto.Boton()
 
-	raiz.mainloop()
+	Ventana.mainloop()

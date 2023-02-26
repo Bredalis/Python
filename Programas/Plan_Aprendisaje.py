@@ -2,8 +2,6 @@
 import pandas as pd
 import time
 
-print(time.strftime('%t'), "Pasos para aprender lo que sea")
-
 Plan = pd.Series([
 
 	"Plan",
@@ -13,4 +11,5 @@ Plan = pd.Series([
 	"Experimenta", "Ten Mentores"
 ])
 
+print(time.strftime('%t'), "Pasos para aprender lo que sea")
 print(time.strftime('%n'), Plan)

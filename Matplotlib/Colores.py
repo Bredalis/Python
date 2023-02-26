@@ -4,26 +4,26 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-matrix = np.arange(36).reshape(6, 6)
+Matriz = np.arange(36).reshape(6, 6)
 
-fig, grafico = plt.subplots()
+fig, Grafica = plt.subplots()
 
-imagen = grafico.imshow(
+Grafica.imshow(
 
-	matrix, cmap = plt.cm.winter, 
+	Matriz, cmap = plt.cm.winter, 
 	interpolation = 'bilinear', extent = [1, 10, 1, 10]
 )
 
 def Diagrama_De_Puntos():
 
-	matrix_distancia = np.linspace(0, 2, 20)
+	Matriz_Distancia = np.linspace(0, 2, 20)
 
-	grado = np.pi*matrix_distancia
-	colores = grado
+	Grado = np.pi*Matriz_Distancia
+	Colores = Grado
 
-	fig, grafico = plt.subplots(subplot_kw = dict(projection = 'polar'))
-	visualizacion = grafico.scatter(grado, matrix_distancia, c = colores, s = 100, cmap = 'hsv')
+	fig, Grafica = plt.subplots(subplot_kw = dict(projection = 'polar'))
+	Visualizacion = Grafica.scatter(Grado, Matriz_Distancia, c = Colores, s = 100, cmap = 'hsv')
 
-	plt.colorbar(mappable = visualizacion, location = 'left')
+	plt.colorbar(mappable = Visualizacion, location = 'left')
 
 plt.show()

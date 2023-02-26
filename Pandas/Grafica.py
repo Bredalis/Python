@@ -2,12 +2,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.DataFrame({
+DF = pd.DataFrame({
 
-	'Columna1': [1, 2, 3, 4], 
-	'Columna2': ['a', 'b', 'c', 'd']
+	'Coordenadas': [1, 2, 3, 4], 
+	'Letras': ['a', 'b', 'c', 'd']
 })
 
-df['Columna1'].plot()
+DF['Coordenadas'].plot()
 
+plt.suptitle("Coordenadas")
 plt.show()

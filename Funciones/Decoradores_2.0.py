@@ -11,7 +11,7 @@ def Decorador(funcion_parametro):
 	return Funcion_Interna
 
 @Decorador
-def Potencia(base, exponente):
-	print(pow(base, exponente))
+def Potencia(Base, Exponente):
+	print(pow(Base, Exponente))
 
-Potencia(base= 3, exponente= 56)
+Potencia(Base = 3, Exponente = 56)

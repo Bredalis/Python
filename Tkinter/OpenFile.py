@@ -2,17 +2,19 @@
 from tkinter import filedialog
 import tkinter as tk
 
-roof = tk.Tk()
-roof.title("Open File")
-roof.geometry('100x30')
-roof.resizable(0,0)
+Window = tk.Tk()
+Window.title("Open File")
+Window.geometry('100x30')
+Window.resizable(0,0)
 
 def Open_File():
 
-	file = filedialog.askopenfilename(title= "Open", initialdir= "C:", filetypes= (("New folder", "*.py"), ("tkinter", "*.py")))
+	Folder = filedialog.askopenfilename(title = "Open", initialdir = "C:", filetypes = (("Keras", "*.py"), ("Tkinter", "*.py")))
 	
-	print(file)
+	File = open(Folder, 'r')
 
-tk.Button(roof, text= "Open file", command= lambda: Open_File(), bg= '#EEFF41').pack()
+	print(File.read())
 
-roof.mainloop()
+tk.Button(Window, text = "Open File", command = lambda: Open_File(), bg = '#EEFF41').pack()
+
+Window.mainloop()

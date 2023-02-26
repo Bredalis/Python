@@ -1,29 +1,31 @@
 
 import tkinter as tk
 
-ventana = tk.Tk()
-ventana.resizable(0,0)
+Ventana = tk.Tk()
+Ventana.resizable(0,0)
 
-opcion = tk.IntVar()
+Opcion = tk.IntVar()
 
 def Eleccion():
 	
-	if opcion.get() == 1:
-		genero.config(text= "Has elegido masculino")
+	if Opcion.get() == 1:
 
-	elif opcion.get() == 2:
-	    genero.config(text= "Has elegido femenina")
+		Genero.config(text = "Has Elegido Masculino")
 
-	else:
-		genero.config(text= "Has elegido otros")
+	elif Opcion.get() == 2:
 
-tk.Label(ventana, text= "Genero :").pack()
+	    Genero.config(text = "Has Elegido Femenina")
 
-tk.Radiobutton(ventana, text= "Masculino", variable= opcion, value= 1, command= lambda: Eleccion()).pack()
-tk.Radiobutton(ventana, text= "Femenino" , variable= opcion, value= 2, command= lambda: Eleccion()).pack()
-tk.Radiobutton(ventana, text= "Otras opciones", variable= opcion, value= 3, command= lambda: Eleccion()).pack()
+	else:		
+		Genero.config(text = "Has Elegido Otros")
 
-genero = tk.Label(ventana)
-genero.pack()
+tk.Label(Ventana, text= "Genero :").pack()
 
-ventana.mainloop()
+tk.Radiobutton(Ventana, text = "Masculino", variable = Opcion, value = 1, command = lambda: Eleccion()).pack()
+tk.Radiobutton(Ventana, text = "Femenino" , variable = Opcion, value = 2, command = lambda: Eleccion()).pack()
+tk.Radiobutton(Ventana, text = "Otras opciones", variable = Opcion, value = 3, command = lambda: Eleccion()).pack()
+
+Genero = tk.Label(Ventana)
+Genero.pack()
+
+Ventana.mainloop()

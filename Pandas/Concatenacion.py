@@ -19,4 +19,4 @@ right_frame = pd.DataFrame({
 print(pd.concat([left_frame, right_frame]))
 print(pd.concat([left_frame, right_frame], axis = 1))
 
-print(pd.merge(left_frame, right_frame, on='Key'))
+print(pd.merge(left_frame, right_frame, on = 'Key'))

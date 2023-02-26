@@ -33,10 +33,13 @@ def Uploaded_log():
     
     Archivo_Registrado = open("Datos_De_Grupo.txt", 'a')
     
+    Archivo_Registrado.write("Integrante : ")
     Archivo_Registrado.write(Integrantes.get())
     Archivo_Registrado.write("\n")
+    Archivo_Registrado.write("Lenguajes : ")
     Archivo_Registrado.write(Lenguajes.get())
     Archivo_Registrado.write("\n")
+    Archivo_Registrado.write("Informacion : ")
     Archivo_Registrado.write(Informacion.get())
     Archivo_Registrado.write("\n\n")
     Archivo_Registrado.close()
@@ -47,11 +50,11 @@ def Uploaded_log():
 
 def Reinicio():
 
-	if Opcion.get() == 1:
+    if Opcion.get() == 1:
 
-		Texto.set("")
+        Texto.set("")
 
-tk.Button(Mi_Frame, width = 10, text = "Registrado", activebackground = 'aqua', command = lambda: Uploaded_log()).place(x = 60, y = 255)
+tk.Button(Mi_Frame, width = 10, text = "Registrar", activebackground = 'aqua', command = lambda: Uploaded_log()).place(x = 60, y = 255)
 
 tk.Checkbutton(Mi_Frame, text = "Reinicio", variable = Opcion, onvalue = 1, offvalue = 0, bg = 'pink', command = lambda: Reinicio()).place(x = 10, y = 10)
 

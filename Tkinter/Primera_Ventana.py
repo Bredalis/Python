@@ -1,22 +1,21 @@
-
 import tkinter as tk
 
-class Menssage:
+class Primera_Ventana():
 
 	def __init__(self):
 
-		self.my_frame = tk.Frame(roof, bg= '#FF66CC', width= 100, height= 100, bd= 35, relief= 'groove', cursor= 'pirate').pack()
-		self.menssage = tk.Label(self.my_frame, text= "Mi Primera Ventana", bg= '#76FF03', font= (25)).pack()
+		self.Mi_Frame = tk.Frame(Ventana, width = 100, height = 100, bd = 30, bg = '#FF66CC', relief = 'groove', cursor = 'hand2')
+		self.Mi_Frame.pack()
+
+		self.Mensage = tk.Label(self.Mi_Frame, text = "Mi Primera Ventana", font = (18), bg = 'green')
+		self.Mensage.pack()
 
 if __name__ == "__main__":
 
-	roof = tk.Tk()
-	roof.title("Primera Ventana")
-	roof.geometry('400x150')
-	roof.config(bg= '#76FF03')
-	roof.resizable(0,0)
-	roof.attributes('-alpha', 0.9)
-
-	class_object = Menssage()
+	Ventana = tk.Tk()
+	Ventana.title("Primera Ventana")
+	Ventana.resizable(0,0)
 	
-	roof.mainloop()
+	Clase_Objeto = Primera_Ventana()
+
+	Ventana.mainloop()
