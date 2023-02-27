@@ -8,9 +8,9 @@ class Algoritmos:
 
 		print(Lista.sort())
 
-	def Ordena_Palabras(self, Palabras):
+	def Invirte_Cosas(self, Cosa):
 
-		print(Palabras[:: -1].capitalize())
+		print(Cosa[:: -1].capitalize())
 
 	def Decorador(self, Separador):
 		def Decorador_Interno():

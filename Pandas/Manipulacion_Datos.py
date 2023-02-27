@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 DF = pd.DataFrame({
-
+	
 	'Numeros': [1, 2, 3, 4], 
 	'Letras': ['a', 'b', 'c', 'd']
 })

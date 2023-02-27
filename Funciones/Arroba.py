@@ -1,13 +1,5 @@
 
-def Arroba_Identificacion(Email):
-
-	"""
-	La Funcion
-
-	>>> Arroba_Identificacion('bredalisgmail.com')
-	False
-	
-	"""
+def Uso_Arroba(Email):
 
 	Arroba = Email.count('@')
 
@@ -19,4 +11,4 @@ def Arroba_Identificacion(Email):
 		
 		return False
 
-print(Arroba_Identificacion("@"))
+print(Uso_Arroba("@"))

@@ -39,7 +39,7 @@ class Registro():
 if __name__ == "__main__":
 
 	Ventana = tk.Tk()
-	Ventana.title("Registro De Interfaz")
+	Ventana.title("Registro")
 	Ventana.resizable(0,0)
 	Ventana.config(bg = '#80DEEA')
 		

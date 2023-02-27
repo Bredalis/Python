@@ -1,17 +1,18 @@
 
-def Decorador(funcion_parametro):                                                           
+def Decorador(Funcion_Parametro):                                                           
 	def Funcion_Interna(*args, **kwargs):
 		
-		print("vamos a realizar un calculo: ")
+		print("Inicio")
 
-		funcion_parametro(*args, **kwargs)
+		Funcion_Parametro(*args, **kwargs)
 
-		print("Hemos terminado el calculo")
+		print("Final")
 		
 	return Funcion_Interna
 
 @Decorador
 def Potencia(Base, Exponente):
+	
 	print(pow(Base, Exponente))
 
 Potencia(Base = 3, Exponente = 56)

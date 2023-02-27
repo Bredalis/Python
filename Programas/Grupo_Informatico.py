@@ -58,4 +58,48 @@ tk.Button(Mi_Frame, width = 10, text = "Registrar", activebackground = 'aqua', c
 
 tk.Checkbutton(Mi_Frame, text = "Reinicio", variable = Opcion, onvalue = 1, offvalue = 0, bg = 'pink', command = lambda: Reinicio()).place(x = 10, y = 10)
 
+class Cerrar():
+
+    def __init__(self, Herencia):
+
+        self.X = tk.Toplevel(Herencia)
+        self.X.title("Salir")
+
+        self.Herencia = Herencia
+        
+        tk.Label(self.X, text = "¿Está seguro?").grid(row = 0, column = 0, columnspan = 2)
+
+        self.Si = tk.Button(self.X, text = "Si", command = self.Salir)
+        self.Si.grid(row = 1, column = 0, padx = 5, pady = 5)
+
+        self.No = tk.Button(self.X, text = "No", command = self.Minimizar)        
+        self.No.grid(row = 1, column = 1, padx = 5, pady = 5)
+
+    def Salir(self):
+
+        self.X.destroy()
+        self.Herencia.destroy()
+
+    def Minimizar(self):
+
+        self.X.destroy()
+        self.Herencia.iconify()
+
+class Registro():
+
+    def __init__(self, Herencia):
+
+        self.Herencia = Herencia
+        self.Herencia.protocol("WM_DELETE_WINDOW", self.Al_Cerrar)
+
+    def Al_Cerrar(self):
+
+        Clase = Cerrar(Ventana)
+
+        self.Herencia.wait_window(Clase.X)
+
+if __name__ == "__main__":
+
+    Clase_Objeto = Registro(Ventana)
+
 Ventana.mainloop()
