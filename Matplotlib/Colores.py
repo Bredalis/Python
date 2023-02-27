@@ -1,29 +1,30 @@
 
-# Color-Map y Color-Bar
-
 import matplotlib.pyplot as plt
 import numpy as np
 
-Matriz = np.arange(36).reshape(6, 6)
+Fig, Grafica = plt.subplots()
 
-fig, Grafica = plt.subplots()
-
-Grafica.imshow(
-
-	Matriz, cmap = plt.cm.winter, 
-	interpolation = 'bilinear', extent = [1, 10, 1, 10]
-)
+Colores = np.arange(36).reshape(6, 6)
 
 def Diagrama_De_Puntos():
 
-	Matriz_Distancia = np.linspace(0, 2, 20)
+	Fig, Grafica = plt.subplots(subplot_kw = dict(projection = 'polar'))
 
-	Grado = np.pi*Matriz_Distancia
+	Distancia = np.linspace(0, 2, 20)
+
+	Grado = np.pi*Distancia
 	Colores = Grado
 
-	fig, Grafica = plt.subplots(subplot_kw = dict(projection = 'polar'))
-	Visualizacion = Grafica.scatter(Grado, Matriz_Distancia, c = Colores, s = 100, cmap = 'hsv')
+	Visualizacion = Grafica.scatter(Grado, Distancia, c = Colores, s = 100, cmap = 'hsv')
 
 	plt.colorbar(mappable = Visualizacion, location = 'left')
+
+Grafica.imshow(
+
+	Colores, cmap = plt.cm.winter,
+	interpolation = 'bilinear', extent = [1, 10, 1, 10]
+)
+
+print(Diagrama_De_Puntos())
 
 plt.show()

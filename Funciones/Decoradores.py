@@ -11,11 +11,11 @@ def Decorador(funcion_parametro):
 	return Funcion_Interna
 
 @Decorador
-def Suma():
-	print(34 + 56)
+def Suma(N1, N2):	
+	return N1 + N2
 
-def Resta():
-	print(34 - 56)
+def Resta(N1, N2):
+	return N1 + N2
 
-Suma()
-Resta()
+Suma(1, 1)
+Resta(2, 2)

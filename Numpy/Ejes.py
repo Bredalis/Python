@@ -9,3 +9,5 @@ def Suma():
 	Columnas = np.sum(Matriz_2D, axis = 1)
 
 	return f"Suma de Filas {Filas}, Columnas {Columnas}"
+
+print(Suma())

@@ -1,43 +1,30 @@
 
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 import matplotlib.pyplot as plt
+from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 import numpy as np
 import pandas as pd
 
-def Limits_Scales():
+Fig, Grafica = plt.subplots()
 
-	Eje_X = np.linspace(0, 20, 200)
-	Eje_Y = Eje_X ** 3
+Eje_X = np.linspace(0, 20, 200)
+Eje_Y = Eje_X ** 3
 
-	fig, Grafica = plt.subplots()
-
-	Grafica.plot(Eje_X, Eje_Y)
-	Grafica.set_yscale('log')
-	Grafica.set_ylim(0, 100000)
-
-def Ticks():
-
-	Eje_X = np.linspace(0, 4*np.pi, 200)
-	Eje_Y = np.cos(Eje_X)
-
-	fig, Grafica = plt.subplots()
-
-	Grafica.plot(Eje_X, Eje_Y)
-	Grafica.set_xticks(np.arange(0, 20, 4), ["Python", "JS", "CSS", "HTML", "Git"])
+Eje_X2 = np.linspace(0, 4*np.pi, 200)
+Eje_Y2 = np.cos(Eje_X2)
 
 def Data_Frame():
 
-	Datos = {"Campo": ["Ingles", "Matematica", "Historia", "Lengua", "Fisica", "Biologia"], "Nivel": [6, 5, 4, 7, 5, 6]}
+	Fig, Grafica = plt.subplots()
 
-	DF_Datos = pd.DataFrame(Datos)
+	Datos = {"Campos": ["Ingles", "Matematica", "Historia", "Lengua", "Fisica", "Biologia"], "Cantidades": [6, 5, 4, 7, 5, 6]}
 
-	fig, Grafica = plt.subplots(figsize = (10, 5))
+	DF = pd.DataFrame(Datos)
 
-	Grafica.bar(DF_Datos.Campo, DF_Datos.Nivel)
-	Grafica.grid(axis = 'y')
+	Grafica.bar(DF.Campos, DF.Cantidades)
+	Grafica.grid(axis =  'y')
 
 	Grafica.set_yticks(range(0, 11, 2))
-	Grafica.set_yticks(range(0, 11, 1), minor = True)
+	Grafica.set_yticks(range(0, 11, 1), minor = 1)
 
 	Grafica.set(ylim = (0, 10))
 	
@@ -46,8 +33,20 @@ def Data_Frame():
 	Grafica.yaxis.set_minor_formatter('{x:.1f} puntos')
 
 	Grafica.tick_params(axis = 'y', which = 'major', labelsize = 14)
-	Grafica.tick_params(axis = 'y', which = 'minor', labelsize = 12)
+	Grafica.tick_params(axis = 'x', which = 'minor', labelsize = 12)
 
 	Grafica.tick_params(axis = 'x', which = 'major', labelsize = 14, labelrotation = 15)
+
+# Limits Scales
+
+Grafica.plot(Eje_X, Eje_Y) 
+Grafica.set_yscale('log')
+Grafica.set_ylim(0, 100000)
+
+# Ticks
+
+Grafica.set_xticks(np.arange(0, 20, 4), ['Android', 'SQL', 'Linux', 'Window', 'Mac'])
+
+print(Data_Frame())
 
 plt.show()

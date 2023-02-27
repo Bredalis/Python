@@ -19,3 +19,5 @@ def Numeros_Aleatoreos():
 		Matriz_Decimal, 
 		Matriz_4		
 	)
+
+print(Numeros_Aleatoreos())

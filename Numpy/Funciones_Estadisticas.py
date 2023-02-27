@@ -17,5 +17,8 @@ def Formulas():
 	print(np.median(Matriz_2D))
 	
 	print(np.mean(Matriz_2D)) # Media Aritmetica
-	print(np.average(Matriz_1D)) # Promedio Ponderado
-	print(np.std(Matriz_1D)) # Desviacion Estandar
+	print(np.average(Matriz_2D)) # Promedio Ponderado
+	print(np.std(Matriz_2D)) # Desviacion Estandar
+
+print(Matriz_2D)
+print(Funciones_Estadisticas(), Formulas())

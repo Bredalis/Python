@@ -10,3 +10,5 @@ def Combercion():
 	Matriz_2 = np.array(Lista_2D)
 
 	return(Matriz_1, Matriz_2)
+
+print(Combercion())

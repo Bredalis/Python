@@ -1,20 +1,20 @@
 
 import pandas as pd
 
-df = pd.DataFrame({
+DF = pd.DataFrame({
 
-	'Columna1': [1, 2, 3, 4], 
-	'Columna2': ['a', 'b', 'c', 'd']
+	'Numeros': [1, 2, 3, 4], 
+	'Letras': ['a', 'b', 'c', 'd']
 })
 
-nombres = ['Numeros', "Letras"]
+Nombres = ['Numeros', "Letras"]
 
-df.columns = nombres
+DF.columns = Nombres
 
 # Tamaño del dataframe y encabezados
 # Descriccion 
 
-print(df.shape, df.head())
-print(df.describe())
+print(DF.shape, DF.head())
+print(DF.describe())
 
-print(df)
+print(DF)

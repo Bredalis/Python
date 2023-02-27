@@ -3,7 +3,7 @@ import numpy as np
 
 Matriz_1D = np.array([1, 1, 0])
 
-def Combercion_Vertical():
+def Conversion_Vertical():
 
 	Matriz = np.array([[-3], [5], [-2]])
 
@@ -22,3 +22,6 @@ def Sistema_De_Ecuaciones():
     # en cuanto a elementos dentro de una tolerancia
 
 	return np.allclose(np.dot(Matriz_1, Ecuacion_Matrices), Matriz_2)
+
+print(Matriz_1D)
+print(Conversion_Vertical(), Sistema_De_Ecuaciones())

@@ -25,7 +25,7 @@ def Metodos():
 
 def Operaciones_Basicas():
 
-	Lista = [
+	Operaciones = [
 
 	np.add(Matriz_1, Matriz_2), 
 	np.subtract(Matriz_1, Matriz_2), 
@@ -34,4 +34,7 @@ def Operaciones_Basicas():
 
 	]
 
-	return Lista
+	return Operaciones
+
+print(Matriz_1, Matriz_2)
+print(Elaboraciones(), Metodos(), Operaciones_Basicas())

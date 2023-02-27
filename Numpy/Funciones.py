@@ -27,3 +27,6 @@ def Tipos_Matrices():
 			Matriz Rapida: {Rapida} \n
 			Matriz 3D: {Matriz_3D}'''
 		)
+
+print(Matriz)
+print(Funciones(), Tipos_Matrices())
