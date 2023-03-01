@@ -41,5 +41,15 @@ class Algoritmos:
 	def Raiz_Cuadrada(self, Numero):
 
 		print(math.sqrt(Numero))
+
+	def Numero_Lineas(Numero):
+
+		Contador = 0
+
+		while Contador < Numero:
+
+			print("\n")
+
+			Contador =+ 1
 				
 Clase_Objeto = Algoritmos()
