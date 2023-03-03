@@ -2,11 +2,11 @@
 def Decorador(Funcion_Parametro):                                                           
 	def Funcion_Interna(*args, **kwargs):
 		
-		print("Inicio")
+		print("Inicio \n")
 
 		Funcion_Parametro(*args, **kwargs)
 
-		print("Final")
+		print("\n Final")
 		
 	return Funcion_Interna
 

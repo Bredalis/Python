@@ -3,7 +3,7 @@ import tkinter as tk
 
 Window = tk.Tk()
 Window.title("Places to travel")
-Window.config(bg= 'pink')
+Window.config(bg = 'pink')
 Window.resizable(0,0)
 
 Beach = tk.IntVar()

@@ -6,8 +6,8 @@ fig, Grafica = plt.subplots()
 
 Datos = {
 	
-	"Habitos": ["Leer", "Programar", "Ejercicio", "Desarrollo Personal", "Ingles", "Practicar", "Afirmaciones"],
-	"Ubicacion": [2, 4, 1, 3, 2, 3, 5]
+	"Habitos": ["Leer", "Programar", "Ejercicio", "Desarrollo Personal", "Ingles", "Practicar"],
+	"Ubicacion": [2, 4, 1, 3, 2, 3]
 }
 
 Habitos = pd.DataFrame(Datos)

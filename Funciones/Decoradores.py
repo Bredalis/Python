@@ -2,11 +2,11 @@
 def Decorador(Funcion_Parametro):
 	def Funcion_Interna():	
 
-		print("Inicio")
+		print("Inicio \n")
 
 		Funcion_Parametro()
 
-		print("Final")
+		print("\n Final \n")
 		
 	return Funcion_Interna
 

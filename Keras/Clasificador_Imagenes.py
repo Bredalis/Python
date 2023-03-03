@@ -4,7 +4,7 @@
 # Cada imagen es de 28x28 pixeles. La clasificacion se llevara a cabo
 # Usando una red neuronal con una capa oculta que contiene 15 neuronas. 
 
-# Importar librerias
+# Librerias
 
 from keras.datasets import mnist
 from keras.models import Sequential
@@ -15,7 +15,7 @@ from keras.utils import np_utils
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Lectura, visualizacion y pre-procesamiento de los datos
+# Lectura de datos
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
@@ -73,7 +73,7 @@ print(modelo.summary())
 sgd = SGD(lr = 0.2)
 modelo.compile(loss = 'categorical_crossentropy', optimizer = sgd, metrics = ['accuracy'])
 
-# Para el entrenamiento se usaran 30 iteraciones y un batch_size de 1024
+# Entrenamiento se usaran 30 iteraciones y un batch_size de 1024
 
 num_epochs = 50
 batch_size = 1024

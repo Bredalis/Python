@@ -13,9 +13,9 @@ class Cerrar():
         tk.Label(self.X, text = "¿Está seguro?").grid(row = 0, column = 3, columnspan = 10)
 
         self.Si = tk.Button(self.X, text = "Si", command = self.Salir)
-        self.Si.grid(row = 3, column = 2, padx = 5, pady = 5, sticky = 'snw')
+        self.No = tk.Button(self.X, text = "No", command = self.Minimizar)
 
-        self.No = tk.Button(self.X, text = "No", command = self.Minimizar)        
+        self.Si.grid(row = 3, column = 2, padx = 5, pady = 5, sticky = 'snw')                
         self.No.grid(row = 3, column = 3, padx = 5, pady = 5, sticky = 'snw')
 
     def Salir(self):
@@ -42,19 +42,19 @@ class Registro():
 
     def Etiquetas(self):
 
-        self.Nombre = tk.Label(Ventana, text = "Nombre: ")
+        self.Nombre = tk.Label(Ventana, text = "Nombre :")
         self.Nombre.grid(row = 0, column = 0, sticky = 'e', padx = 10, pady = 10)       
 
-        self.Apellido = tk.Label(Ventana, text = "Apellido:")
+        self.Apellido = tk.Label(Ventana, text = "Apellido :")
         self.Apellido.grid(row = 1, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-        self.Direccion = tk.Label(Ventana, text = "Direccion:")
+        self.Direccion = tk.Label(Ventana, text = "Direccion :")
         self.Direccion.grid(row = 2, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-        self.Contraseña = tk.Label(Ventana, text = "Contraseña:")
+        self.Contraseña = tk.Label(Ventana, text = "Contraseña :")
         self.Contraseña.grid(row = 3, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-        self.Comentario = tk.Label(Ventana, text = "Comentarios:")
+        self.Comentario = tk.Label(Ventana, text = "Comentarios :")
         self.Comentario.grid(row = 4, column = 0, sticky = 'e', padx = 10, pady = 10)
 
     def Entrys(self):
@@ -116,9 +116,9 @@ class Registro():
 
     def Al_Cerrar(self):
 
-        Clase = Cerrar(Ventana)
+        self.Clase = Cerrar(Ventana)
 
-        self.Herencia.wait_window(Clase.X)
+        self.Herencia.wait_window(self.Clase.X)
 
 
 if __name__ == "__main__":

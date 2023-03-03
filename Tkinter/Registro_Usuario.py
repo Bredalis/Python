@@ -10,16 +10,16 @@ class Registro():
 
 	def Etiquetas(self):
 
-		self.Nombre = tk.Label(Ventana, text = "Nombre: ", bg = self.Colores[1])
+		self.Nombre = tk.Label(Ventana, text = "Nombre :", bg = self.Colores[1])
 		self.Nombre.grid(row = 0, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.Apellido = tk.Label(Ventana, text = "Apellido:", bg = self.Colores[1])
+		self.Apellido = tk.Label(Ventana, text = "Apellido :", bg = self.Colores[1])
 		self.Apellido.grid(row = 1, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.Direccion = tk.Label(Ventana, text = "Direccion:", bg = self.Colores[1])
+		self.Direccion = tk.Label(Ventana, text = "Direccion :", bg = self.Colores[1])
 		self.Direccion.grid(row = 2, column = 0, sticky = 'e', padx = 10, pady = 10)
 
-		self.Contraseña = tk.Label(Ventana, text = "Contraseña:", bg = self.Colores[1])
+		self.Contraseña = tk.Label(Ventana, text = "Contraseña :", bg = self.Colores[1])
 		self.Contraseña.grid(row = 3, column = 0, sticky = 'e', padx = 10, pady = 10)
 
 	def Entrys(self):

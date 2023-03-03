@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 DF = pd.DataFrame({
 
-	'Coordenadas': [1, 2, 3, 4], 
+	'Coordenadas': [1, 6, 3, 8]
 })
 
 DF.plot()

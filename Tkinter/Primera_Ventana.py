@@ -7,7 +7,7 @@ class Primera_Ventana():
 		self.Mi_Frame = tk.Frame(Ventana, width = 100, height = 100, bd = 30, bg = '#FF66CC', relief = 'groove', cursor = 'hand2')
 		self.Mi_Frame.pack()
 
-		self.Mensage = tk.Label(self.Mi_Frame, text = "Mi Primera Ventana", font = (18), bg = 'green')
+		self.Mensage = tk.Label(self.Mi_Frame, text = "Mi Primera Ventana", font = (18), bg = 'skyblue')
 		self.Mensage.pack()
 
 if __name__ == "__main__":

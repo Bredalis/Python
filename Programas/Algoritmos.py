@@ -2,13 +2,32 @@
 import re
 import math
 
-class Algoritmos:	
+class Algoritmos:
+
+	def Prefijos_Sufijos(self):
+
+		# Nombres Patos
+
+		self.Prefijos = "JKLMOPQ"
+		
+		self.Sufijo = "ack"
+		self.Sufijo_2 = "uack"
+
+		for Letra in self.Prefijos:
+
+			if Letra < self.Prefijos[4] or Letra == self.Prefijos[5]:
+
+				print(Letra + self.Sufijo)
+
+			else: 
+
+				print(Letra + self.Sufijo_2)	
 
 	def Ordena_Listas(self, Lista):
 
 		print(Lista.sort())
 
-	def Invirte_Cosas(self, Cosa):
+	def Orden_Inverso(self, Cosa):
 
 		print(Cosa[:: -1].capitalize())
 

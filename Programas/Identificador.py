@@ -1,5 +1,5 @@
 
-# Programa de identificacion de Datos
+# Programa que identifica datos
 
 def Valor(*Datos):
 

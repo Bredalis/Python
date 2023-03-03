@@ -1,6 +1,6 @@
 
-from tkinter import filedialog
 import tkinter as tk
+from tkinter import filedialog
 
 Window = tk.Tk()
 Window.title("Open File")
@@ -11,7 +11,7 @@ def Open_File():
 
 	Folder = filedialog.askopenfilename(title = "Open", initialdir = "C:", filetypes = (("Keras", "*.py"), ("Tkinter", "*.py")))
 	
-	File = open(Folder, 'r')
+	File = open(Folder)
 
 	print(File.read())
 

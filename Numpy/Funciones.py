@@ -19,7 +19,7 @@ def Tipos_Matrices():
 	
 	Rapida = np.linspace(99, 88, 25)
 
-	return(
+	print(
 
 		f'''Matriz de Unos: {Unos}
 			Matriz de Ceros: {Ceros} \n 
