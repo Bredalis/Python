@@ -4,6 +4,19 @@ import math
 
 class Algoritmos:
 
+	def Manipular_Archivos(Archivo, Mensaje):
+
+		Archivo = open(Archivo, 'w')
+
+		Archivo.write(Mensaje)
+		Archivo.close()
+
+	def Leer_Archivo(Archivo):
+
+		Archivo = open(Archivo, 'r')
+
+		print(Archivo.read())
+
 	def Prefijos_Sufijos(self):
 
 		# Nombres Patos
@@ -23,15 +36,15 @@ class Algoritmos:
 
 				print(Letra + self.Sufijo_2)	
 
-	def Ordena_Listas(self, Lista):
+	def Ordena_Listas(Lista):
 
 		print(Lista.sort())
 
-	def Orden_Inverso(self, Cosa):
+	def Orden_Inverso(Cosa):
 
 		print(Cosa[:: -1].capitalize())
 
-	def Decorador(self, Separador):
+	def Decorador(Separador):
 		def Decorador_Interno():
 
 			print("Inicio")
@@ -57,7 +70,7 @@ class Algoritmos:
 
 			print("No encontramos la letra")
 
-	def Raiz_Cuadrada(self, Numero):
+	def Raiz_Cuadrada(Numero):
 
 		print(math.sqrt(Numero))
 
