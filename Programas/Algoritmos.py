@@ -4,18 +4,18 @@ import math
 
 class Algoritmos:
 
-	def Manipular_Archivos(Archivo, Mensaje):
+	def Manipular_Archivos(self, Archivo, Mensaje):
 
-		Archivo = open(Archivo, 'w')
+		self.Archivo = open(Archivo, 'w')
 
-		Archivo.write(Mensaje)
-		Archivo.close()
+		self.Archivo.write(Mensaje)
+		self.Archivo.close()
 
-	def Leer_Archivo(Archivo):
+	def Leer_Archivo(self, Archivo):
 
-		Archivo = open(Archivo, 'r')
+		self.Archivo = open(Archivo, 'r')
 
-		print(Archivo.read())
+		print(self.Archivo.read())
 
 	def Prefijos_Sufijos(self):
 
@@ -36,15 +36,17 @@ class Algoritmos:
 
 				print(Letra + self.Sufijo_2)	
 
-	def Ordena_Listas(Lista):
+	def Ordena_Listas(self, Lista):
 
 		print(Lista.sort())
 
-	def Orden_Inverso(Cosa):
+	def Orden_Inverso(self):
 
-		print(Cosa[:: -1].capitalize())
+		self.Cosa = input("Cosa para invertir: ")
 
-	def Decorador(Separador):
+		print(self.Cosa[:: -1].capitalize())
+
+	def Decorador(self, Separador):
 		def Decorador_Interno():
 
 			print("Inicio")
@@ -64,24 +66,22 @@ class Algoritmos:
 
 		if re.match(self.Palabra_Buscar, self.Frase, re.IGNORECASE):
 			
-			print("La palabra esta aqui : ", self.Frase)
+			print("No encontramos la letra")
 
 		else:
 
-			print("No encontramos la letra")
+			print("La palabra esta aqui : ", self.Frase)
 
-	def Raiz_Cuadrada(Numero):
+	def Raiz_Cuadrada(self):
 
-		print(math.sqrt(Numero))
+		self.Numero = int(input("Numero para encontrarle la raiz cuadrada: "))
 
-	def Numero_Lineas(Numero):
+		print(math.sqrt(self.Numero))
 
-		Contador = 0
+	def Numero_Lineas(self):
 
-		while Contador < Numero:
+		self.Numero = int(input("Numero de saltos de lineas: "))
 
-			print("\n")
-
-			Contador =+ 1
+		print("\n"*self.Numero)
 				
 Clase_Objeto = Algoritmos()

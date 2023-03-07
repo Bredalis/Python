@@ -1,7 +1,17 @@
 
-from Regresion_Lineal_Simple import X, Y
-from sklearn.linear_model import LinearRegression
+# Librerias
+
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+Datos = pd.read_excel("Datos_Regresion_Lineal.xlsx")
+
+X = Datos[["Reduccion de Solidos"]]
+Y = Datos[["Reduccion de la demanda de oxigeno"]]
+
+# Entrenamiento del Modelo
 
 CLF = LinearRegression()
 
@@ -10,11 +20,9 @@ CLF.fit(X, Y)
 print(CLF.coef_)
 print(CLF.intercept_)
 
-# Predicciones
+# Representacion Grafica
 
-print(CLF.predict([[7]]))
-
-plt.plot(X, Y)
+plt.scatter(X, Y)
 plt.plot(X, CLF.predict(X))
 
 plt.title("Regresion Lineal Simple")
