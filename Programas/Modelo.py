@@ -20,15 +20,6 @@ X_Train, X_Test, Y_Train, Y_Test = train_test_split(X, Y, shuffle = True, test_s
 
 CLF.fit(X_Train, Y_Train)
 
-print(X_Train.shape)
-print(Y_Train.shape)
-
-print(X_Test.shape)
-print(Y_Test.shape)
-
-print(X_Train)
-print(Y_Train)
-
 # Representacion Grafica
 
 plt.scatter(X_Train, CLF.predict(X_Train))
