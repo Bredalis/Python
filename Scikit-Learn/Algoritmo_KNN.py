@@ -7,8 +7,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
 
-# Datos del datasets
-
 X, Y = make_classification(n_samples = 200)
 
 # Lectura de datos
@@ -21,22 +19,24 @@ CLF = KNeighborsClassifier()
 
 # Entrenamiento
 
-CLF.fit(X_Train, Y_Train)
+CLF.fit(X, Y)
 
-print(CLF.score(X_Test, Y_Test)) # Rendimiento 
+# Predicciones
 
 Y_Pred = CLF.predict(X_Test)
 
-print("Prediccion", Y_Pred)
+print("Predicciones", Y_Pred)
 
-Matriz_Confusion = confusion_matrix(Y_Test, Y_Pred)
+print("Rendimiento", CLF.score(X_Test, Y_Test))
 
-print("Matriz de confucion", Matriz_Confusion)
+Matriz_Confusion = confusion_matrix(Y_Pred, Y_Test)
+
+print("Matriz Confusion", Matriz_Confusion)
 
 # Modo Grafica
 
 plt.scatter(X_Train[:, 0], X_Train[:, 1], c = Y_Train)
-plt.scatter(X_Test[1, 0], X_Test[1, 1], s = 100)
+plt.scatter(X_Test[1, 1], X_Test[1, 1], s = 100)
 plt.grid()
 
 plt.show()

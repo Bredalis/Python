@@ -30,9 +30,9 @@ Y_Pred = CLF.predict(X_Test)
 
 print("Prediccion", Y_Pred)
      
-Accuracy = accuracy_score(Y_Test, Y_Pred)
+Exactitud = accuracy_score(Y_Test, Y_Pred)
 
-print(Accuracy)
+print("Exactitud", Exactitud)
      
 Matriz_Confusion = confusion_matrix(Y_Test, Y_Pred)
 
@@ -44,7 +44,7 @@ print("Precision", Precision)
      
 Recall = recall_score(Y_Test, Y_Pred)
 
-print(Recall)
+print("Recordar", Recall)
      
 F1 = f1_score(Y_Test, Y_Pred)
 
@@ -52,7 +52,7 @@ print(F1)
 
 Report = classification_report(Y_Test, Y_Pred)
 
-print(Report)
+print("Informe", Report)
 
 # Modo Grafica
 

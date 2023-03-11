@@ -4,7 +4,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from keras.datasets import boston_housing
-from sklearn.linear_model import Ridge, LinearRegression
+from sklearn.linear_model import Ridge
 
 # Lectura de datos
 
@@ -13,11 +13,11 @@ from sklearn.linear_model import Ridge, LinearRegression
 print("Cantidad X de entrenamiento", X_Train.shape)
 print("Cantidad Y de entrenamiento", Y_Train.shape)
 print("Datos X de prueba", X_Test)
-print("Datos Y de prueba", Y_Test)
+print("Etiquetas Y de prueba", Y_Test)
 
 # Modelo
 
-CLF = LinearRegression()
+CLF = Ridge()
 
 # Entrenamiento
 
@@ -39,8 +39,8 @@ print(pd.concat([DF_Y_Test, DF_Y_Pred], axis = 1))
 plt.plot(X_Test)
 plt.plot(Y_Pred)
 
-plt.xlabel("N_Casa")
-plt.ylabel("Precio")
+plt.xlabel("N_Casas")
+plt.ylabel("Precios")
 plt.title("Regresion Ridge")
 plt.legend(["Y_Test", "Predicciones"])
 plt.grid()
