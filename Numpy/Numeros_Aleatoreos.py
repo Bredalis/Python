@@ -13,10 +13,10 @@ def Numeros_Aleatoreos():
 
 	print(
 
-		Matriz_1, 
-		Matriz_2, 
-		Matriz_3, 
-		Matriz_Decimal, 
+		"Random", Matriz_1, 
+		"Random lista", Matriz_2, 
+		"Decimal", Matriz_3, 
+		"Probabilidad", Matriz_Decimal, 
 		Matriz_4		
 	)
 

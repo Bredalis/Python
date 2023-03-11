@@ -3,10 +3,12 @@ import matplotlib.pyplot as plt
 
 Fig, Grafica = plt.subplots()
 
-Grafica.plot([1, 2, 3, 4], [1, 2, 4, 3], label = 'Linea Azul')
-Grafica.plot([1, 2, 3, 4], [4, 5, 6, 4], label = 'Linea Naranja') 
+# Lineas
 
-# Ventana de las leyendas
+Grafica.plot([1, 2, 3, 4], [1, 2, 4, 3], label = 'Linea Azul')
+Grafica.plot([1, 2, 3, 4], [4, 5, 6, 4], label = 'Linea Naranja')
+
+# Circulos
 
 Grafica.scatter([1, 2, 3, 4], [1.5, 5, 4.5, 5.6], label = 'Puntos')
 

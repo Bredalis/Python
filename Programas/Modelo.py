@@ -12,18 +12,22 @@ Datos = pd.read_excel("C:\\Users\\Angelica Gerrero\\Desktop\\LenguajesDePrograma
 X = Datos[["Reduccion de Solidos"]]
 Y = Datos[["Reduccion de la demanda de oxigeno"]]
 
+# Modelo
+
 CLF = LinearRegression()
 
-# Entrenamiento
+# Lectura de datos 
 
 X_Train, X_Test, Y_Train, Y_Test = train_test_split(X, Y, shuffle = True, test_size = 16)
 
+# Entrenamiento
+
 CLF.fit(X_Train, Y_Train)
 
-# Representacion Grafica
+# Modo Grafica
 
-plt.scatter(X_Train, CLF.predict(X_Train))
-plt.plot(X_Train, Y_Train)
+plt.scatter(Y_Train, X_Train)
+plt.plot(X_Train, CLF.predict(X_Train))
 
 plt.title("Regresion Lineal Simple")
 plt.xlabel("Reduccion de Solidos")

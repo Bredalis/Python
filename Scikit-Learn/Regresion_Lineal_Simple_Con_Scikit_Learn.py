@@ -2,7 +2,6 @@
 # Librerias
 
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
@@ -11,13 +10,15 @@ Datos = pd.read_excel("Datos_Regresion_Lineal.xlsx")
 X = Datos[["Reduccion de Solidos"]]
 Y = Datos[["Reduccion de la demanda de oxigeno"]]
 
-# Entrenamiento del Modelo
+# Modelo
 
 CLF = LinearRegression()
 
+# Entrenamiento
+
 CLF.fit(X, Y)
 
-print(CLF.coef_)
+print(f"Valor de β0 y β1 {CLF.coef_}")
 print(CLF.intercept_)
 
 # Representacion Grafica

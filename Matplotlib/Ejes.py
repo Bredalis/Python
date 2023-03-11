@@ -6,11 +6,11 @@ import pandas as pd
 
 Fig, Grafica = plt.subplots()
 
-Eje_X = np.linspace(0, 20, 200)
-Eje_Y = Eje_X ** 3
+X = np.linspace(0, 20, 200)
+Y = X ** 3
 
-Eje_X2 = np.linspace(0, 4*np.pi, 200)
-Eje_Y2 = np.cos(Eje_X2)
+X2 = np.linspace(0, 4*np.pi, 200)
+Y2 = np.cos(X2)
 
 def Data_Frame():
 
@@ -19,6 +19,8 @@ def Data_Frame():
 	Datos = {"Campos": ["Ingles", "Matematica", "Historia", "Lengua", "Fisica", "Biologia"], "Cantidades": [6, 5, 4, 7, 5, 6]}
 
 	DF = pd.DataFrame(Datos)
+
+	# Barras
 
 	Grafica.bar(DF.Campos, DF.Cantidades)
 	Grafica.grid(axis =  'y')
@@ -39,7 +41,7 @@ def Data_Frame():
 
 # Limits Scales
 
-Grafica.plot(Eje_X, Eje_Y) 
+Grafica.plot(X, Y) 
 Grafica.set_yscale('log')
 Grafica.set_ylim(0, 100000)
 

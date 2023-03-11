@@ -14,7 +14,8 @@ DF.columns = Nombres
 # Tamaño del dataframe y encabezados
 # Descriccion 
 
-print(DF.shape, DF.head())
+print(DF.shape)
+print(DF.head())
 print(DF.describe())
 
 print(DF)

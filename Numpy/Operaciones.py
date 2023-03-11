@@ -10,7 +10,7 @@ def Elaboraciones():
 
 	print(Matriz_1[3, 4])
 
-	print(np.concatenate((Matriz_1, Matriz_2)))
+	print("Concatenacion", np.concatenate((Matriz_1, Matriz_2)))
 
 	print(np.array(Matriz_2 >= 4))
 
@@ -18,19 +18,19 @@ def Metodos():
 
 	Matriz_1D = np.array([90, 7, 9, 4, 2, 1])
 	
-	print(np.power(Matriz_1D, 2))
+	print("Potencia", np.power(Matriz_1D, 2))
 	print(np.sort(Matriz_1D))
 
-	print(Matriz_2.max(), np.array(Matriz_2.min()))
+	print("Maximo", Matriz_2.max(), "Minimo", np.array(Matriz_2.min()))
 
 def Operaciones_Basicas():
 
 	Operaciones = [
 
-	np.add(Matriz_1, Matriz_2), 
-	np.subtract(Matriz_1, Matriz_2), 
-	np.multiply(Matriz_1, Matriz_2), 
-	np.divide(Matriz_1, Matriz_2),
+	"Suma", np.add(Matriz_1, Matriz_2), 
+	"Resta", np.subtract(Matriz_1, Matriz_2), 
+	"Multiplicacion", np.multiply(Matriz_1, Matriz_2), 
+	"Division", np.divide(Matriz_1, Matriz_2),
 
 	]
 

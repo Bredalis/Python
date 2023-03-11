@@ -4,12 +4,12 @@ import numpy as np
 
 Fig, Grafica = plt.subplots()
 
-Eje_X = np.linspace(0.1, 6)
-Eje_Y = np.sin(Eje_X)
+X = np.linspace(0.1, 6)
+Y = np.sin(X)
 
 # Stem
 
-Grafica.stem(Eje_X, Eje_Y, linefmt = ('k', ':'), markerfmt = 'D', basefmt = 'C3--')
+Grafica.stem(X, Y, linefmt = ('k', ':'), markerfmt = 'D', basefmt = 'C3--')
 
 # Set
 
@@ -27,6 +27,8 @@ Grafica.spines['right'].set_linestyle('dashed')
 
 Grafica.spines['left'].set_visible(1)
 Grafica.spines['right'].set_visible(1)
+
+# Lineas de fondo
 
 Grafica.grid(1, linewidth = 1)
 

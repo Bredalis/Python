@@ -37,6 +37,7 @@ print("B2 :", B0)
 # Modo Graficado
 
 plt.scatter(X, Y)
+plt.plot(X, X)
 
 plt.title("Modelo De Regresion Lineal Simple")
 plt.xlabel("Reduccion de Solidos")
